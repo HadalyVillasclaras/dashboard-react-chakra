@@ -1,13 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { DashboardRouter } from './ui/react/common/routes/DashboardRouter'
 
 function App() {
 
   return (
     <div className="App">
-      <h1>Home</h1>
+      <DashboardRouter/>
     </div>
   )
 }
-
 export default App
