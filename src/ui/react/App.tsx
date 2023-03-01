@@ -1,4 +1,4 @@
-import { DashboardRouter } from './ui/react/common/routes/DashboardRouter'
+import { DashboardRouter } from './common/routes/DashboardRouter'
 
 function App() {
 
