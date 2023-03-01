@@ -15,7 +15,7 @@ export const DashboardLayout = ({ children }: Props) => {
       <Divider/>
       <Box as='section' display='flex'>
         <SideBar/>
-        <Box as='main' h='85vh'>
+        <Box as='main' p='3rem' overflow='hidden' minHeight='90vh' width='100%'>
             {children}
         </Box>
       </Box>

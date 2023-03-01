@@ -1,5 +1,11 @@
+import { Box, Text } from "@chakra-ui/react"
+
 export const Footer = () => {
   return (
-    <footer>Footer</footer>
+    <Box as='footer'>
+      <Text p='1rem' fontSize={'sm'} textAlign={'center'}>
+          © 2023 | HV 
+      </Text>
+    </Box>
   )
 }
