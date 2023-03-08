@@ -1,7 +1,6 @@
 import { ReactElement } from 'react'
 import { Box } from '@chakra-ui/react'
 
-
 interface Props {
     children: ReactElement | ReactElement[]
 }

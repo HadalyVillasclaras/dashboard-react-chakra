@@ -4,21 +4,20 @@ export const Button = defineStyleConfig({
     baseStyle: {
       color: 'white',
       borderRadius: '10px',
-      _disabled: {
-        opacity: 0.5,
+    },
+
+    variants: {
+      solid: {
+        bg: 'gray.500',
         _hover: {
-          opacity:0.5, 
+          bg: 'gray.400'
         }
-      },
-      _hover: {
-        _disabled: {
-          backgroundColor: "gray.500",
-        },
       }
     },
 
     defaultProps: {
-      colorScheme: 'gray'
+      colorScheme: 'gray',
+      variant: 'solid'
     }
   });
   
