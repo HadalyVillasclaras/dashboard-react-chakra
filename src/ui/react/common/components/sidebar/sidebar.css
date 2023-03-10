@@ -1,0 +1,120 @@
+#sidebar {
+    position: relative;
+    /* background-color: white; */
+    height: 100vh;
+    padding: 0.8rem;
+    border-right: 1px solid #CBD5E0;
+}
+
+
+#sidebar .close-button {
+    z-index: 333;
+    display:flex;
+    position:absolute;
+    padding: 0px;
+    right: -0.9rem;
+    top: 5rem;
+    border-radius: 50%;
+    border: 1px solid #CBD5E0;
+    width:1.6rem;
+    height:1.6rem;
+    min-width:1rem;
+    background-color: #E2E8F0;
+}
+
+#sidebar .close-button:hover {
+    background-color: #CBD5E0;
+}
+
+#sidebar header, #sidebar nav {
+    overflow: hidden;
+
+}
+
+#sidebar header a {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.3rem 0;
+}
+
+
+#sidebar nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    overflow-x:hidden;
+
+
+}
+
+/*Nav 1*/
+#sidebar nav ul:nth-child(1) {
+    display: flex;
+    flex-direction:column;
+    gap:1.2vh;
+    margin-top: 3vh;
+
+}
+
+#sidebar nav ul:nth-child(1) a {
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+    flex-wrap:nowrap;
+    font-size:1.1rem;
+    font-weight:600;
+    border-radius: 8px;
+    padding: 0.8rem;
+}
+
+#sidebar nav ul:nth-child(1) a:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+#sidebar nav ul:nth-child(1) svg {
+    width: 2.3vh;
+    height: 2.3vh;
+}
+
+/*Nav 2*/
+
+#sidebar nav ul:nth-child(2){
+    font-weight:600;
+    font-size: 0.8rem;
+    padding-left: 0.6rem;
+}
+
+#sidebar nav ul:nth-child(2) svg{
+    width:1.5vh;
+    height:1.5vh;
+}
+
+#sidebar nav ul:nth-child(2) a {
+    margin-top: 0.5rem;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+#sidebar nav ul:nth-child(2) a:hover {
+    text-decoration: underline;
+}
+
+
+#sidebar nav ul:nth-child(2) p{
+    white-space: nowrap;
+}
+
+/* @keyframes smooth {
+    from {display: block;}
+    to {display: none;}
+}
+
+.hide-show {
+    animation-name: smooth;
+    animation-duration: 4s;
+} */

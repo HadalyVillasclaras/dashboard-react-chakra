@@ -2,7 +2,7 @@ import { ReactElement } from 'react'
 import { Box, Divider } from '@chakra-ui/react'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
-import { SideBar } from '../components/Sidebar'
+import { SideBar } from '../components/sidebar/Sidebar'
 
 interface Props {
   children: ReactElement | ReactElement[]
