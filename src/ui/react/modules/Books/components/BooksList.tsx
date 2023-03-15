@@ -7,7 +7,6 @@ import {
   Thead,
   Tr,
 } from "@chakra-ui/react";
-import React from "react";
 import { Section } from "../../../common/components/modules/Section";
 import books from "../../../../../modules/core/books.json";
 
@@ -34,9 +33,9 @@ export const BooksList = () => {
               </Tr>
             </Thead>
             <Tbody>
-              {books.map((book: any) => {
+              {books.map((book: any, index) => {
                 return (
-                  <Tr>
+                  <Tr key={index}>
                     <Td>{book.title}</Td>
                     <Td>{book.author}</Td>
                     <Td>{book.year}</Td>

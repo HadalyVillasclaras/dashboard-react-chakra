@@ -1,26 +1,35 @@
 import { Box } from "@chakra-ui/react";
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useMatches } from "react-router-dom";
+import "./breadcrumbs.css";
 
 export const Breadcrumbs = () => {
-  let location = useLocation();
-  let currentLink = "";
+  let matches = useMatches();
 
-  const crumbs = location.pathname
-    .split("/")
-    .filter((crumb) => crumb !== "")
-    .map((crumb) => {
-      currentLink = currentLink + `/${crumb}`;
+  console.log(matches);
+  let crumbs = matches
+    .filter((match: any) => Boolean(match.handle?.crumb)) //elimina los que no tienen handle/crumb
+    .map((match: any) => {
+      console.log(match.pathname);
+
       return (
-        <Link to={currentLink} key={crumb}>
-          {crumb.charAt(0).toUpperCase() + crumb.slice(1)}
-        </Link>
-      );
-    });
+        match.handle.crumb()
+      )
+    }); //
+
+  console.log(crumbs);
 
   return (
-    <Box id="breadcrumbs" as="span">
-      {crumbs}
+    <Box as="span" id="breadcrumbs">
+      {crumbs.map((crumb, index, crumbs) => {
+        if (index + 1 === crumbs.length) {
+          return (
+            <span key={index}>{crumb}</span>)
+        } else {
+          return (
+            <span key={index}><Link to="#">{crumb}</Link></span>
+          )
+        }
+      })}
     </Box>
   );
 };

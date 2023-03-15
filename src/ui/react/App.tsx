@@ -1,10 +1,10 @@
-import { DashboardRouter } from './common/routes/DashboardRouter'
+import { Router } from './common/routes/Router'
 
 function App() {
 
   return (
     <div className="App">
-      <DashboardRouter/>
+      <Router />
     </div>
   )
 }
