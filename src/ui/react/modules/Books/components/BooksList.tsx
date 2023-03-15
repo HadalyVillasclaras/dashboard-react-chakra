@@ -1,4 +1,8 @@
+import { DeleteIcon, EditIcon, ViewIcon } from "@chakra-ui/icons";
 import {
+  Box,
+  Button,
+  ButtonGroup,
   Table,
   TableContainer,
   Tbody,
@@ -7,14 +11,14 @@ import {
   Thead,
   Tr,
 } from "@chakra-ui/react";
-import { Section } from "../../../common/components/modules/Section";
+import { Link } from "react-router-dom";
 import books from "../../../../../modules/core/books.json";
 
 export const BooksList = () => {
   console.log(books);
   return (
     <>
-      <Section>
+      <Box>
         <TableContainer
           whiteSpace="normal"
           borderRadius="0.7rem"
@@ -42,14 +46,37 @@ export const BooksList = () => {
                     <Td>{book.pages}</Td>
                     <Td>sold</Td>
                     <Td>x</Td>
-                    <Td>- -</Td>
+                    <Td>                    
+                      <ButtonGroup>
+                          <Link to='#'>
+                            <Button
+                              size="xs"
+                              variant="icon-button"
+                              data-testid="admin-element"
+                            >
+                              <EditIcon />
+                            </Button>
+                          </Link>
+                          <Button
+                            size="xs"
+                            variant="icon-button"
+                          >
+                            <DeleteIcon />
+                          </Button>
+                          <Button size="xs" variant="icon-button">
+                            <Link to='#'>
+                              <ViewIcon />
+                            </Link>
+                          </Button>
+                    </ButtonGroup>
+                    </Td>
                   </Tr>
                 );
               })}
             </Tbody>
           </Table>
         </TableContainer>
-      </Section>
+      </Box>
     </>
   );
 };

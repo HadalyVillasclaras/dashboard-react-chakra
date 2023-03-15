@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { AddBookPage } from '../../modules/Books/pages/AddBookPage'
 import { BooksPage } from '../../modules/Books/pages/BooksPage'
 import { HomePage } from '../../modules/Home/pages/HomePage'
 import { DashboardLayout } from '../layouts/DashboardLayout'
@@ -21,10 +22,19 @@ export const Router = () => {
         },
         {
           path: "books",
-          element: <BooksPage title="Books" />,
           handle: {
             crumb: () => 'Books'
-          }
+          },
+          children: [
+            {
+              index: true,
+              element: <BooksPage title="Books" />,
+            },
+            {
+              path: "add",
+              element: <AddBookPage title="Add" />,
+            },
+          ]
         }
       ]
     }
