@@ -10,16 +10,14 @@ import { Outlet } from 'react-router-dom'
 export const DashboardLayout = () => {
   return (
     <>
-      <Header />
-      <Divider />
-      <Box as='section' display='flex'>
-        <SideBar />
-        <Box as='main' p='3rem' overflow='hidden' minHeight='90vh' width='100%'>
-          <Outlet />
+ <Box as="section" height="100vh" display="flex">
+          <SideBar />
+          <Box as="main" overflowX="hidden" width="100%">
+            <Header />
+            <Outlet />
+            <Footer />
+          </Box>
         </Box>
-      </Box>
-      <Divider />
-      <Footer />
     </>
   )
 }

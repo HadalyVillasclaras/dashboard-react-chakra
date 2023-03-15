@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   Heading,
+  Text,
   ListItem,
   UnorderedList,
 } from "@chakra-ui/react";
@@ -11,35 +12,34 @@ import { Breadcrumbs } from "./breadcrumbs/Breadcrumbs";
 
 export const Header = () => {
   return (
-    <Box
-      as="header"
-      display="flex"
-      flexDirection="row"
-      justifyContent="space-between"
-    >
-      <Link to="/">
-        <Heading as="h1">Logo</Heading>
-      </Link>
-      <Breadcrumbs />
-      <UnorderedList
+    <Box as="header" mb="1rem">
+      <Box
+        as="nav"
         display="flex"
-        justifyContent="center"
-        alignContent="center"
-        flexWrap="wrap"
-        gap="1rem"
+        flexDirection="row"
+        justifyContent="space-between"
       >
-        <ListItem display="flex" alignContent="center">
-          <Button variant="link">
-            <a href="#">
-              <QuestionIcon mr="0.3rem" />
-              Help
-            </a>
-          </Button>
-        </ListItem>
-        <ListItem>
-          <p>Logout</p>
-        </ListItem>
-      </UnorderedList>
+        <Breadcrumbs />
+        <UnorderedList
+          display="flex"
+          justifyContent="center"
+          alignContent="center"
+          flexWrap="wrap"
+          gap="1rem"
+        >
+          <ListItem>
+            <Text>Hola</Text>
+          </ListItem>
+          <ListItem>
+            <QuestionIcon/>
+          </ListItem>
+          <ListItem>
+          </ListItem>
+          <ListItem>
+            Logut
+          </ListItem>
+        </UnorderedList>
+      </Box>
     </Box>
   );
 };
