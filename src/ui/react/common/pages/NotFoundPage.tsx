@@ -1,9 +1,15 @@
+import { Divider } from '@chakra-ui/react'
+import { useRouteError } from 'react-router-dom';
 import { Subheader } from '../components/modules/subheader/Subheader'
 
 export const NotFoundPage = () => {
+  const error: any = useRouteError();
+
   return (
     <>
-      <Subheader title='404 | Not found'/>
+      <Subheader title={error.status}/>
+      <Divider my='1rem' />
+      <h4>Lo sentimos, no hemos encontrado la página que buscas.</h4>
     </>
   )
 }

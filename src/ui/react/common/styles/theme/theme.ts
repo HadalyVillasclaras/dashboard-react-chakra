@@ -14,7 +14,6 @@ const styles = {
       fontSize: '1rem',
       bg: mode('gray.50', '')(props),
     },
-
     h1: {
       fontSize: '2rem',
       fontWeight: 'bold',
@@ -48,14 +47,8 @@ const styles = {
     _selection: {
       background:'pink.100'
     },
-
   }),
-
-
 };
-
-
-
 
 
 export const theme = extendTheme({

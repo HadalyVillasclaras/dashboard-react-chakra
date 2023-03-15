@@ -13,20 +13,32 @@ export const Table = defineStyleConfig({
     },
 
     variants: {
-        simple: {
-            th:{ 
-                color: 'gray.800',
-                borderBottom: '0.1rem solid',
-                borderColor: 'gray.200'
+        simple: ({ colorMode }) => ({
+          th: {
+            color: "gray.800",
+            borderBottom: "0.1rem solid",
+            borderColor: "gray.200",
+          },
+          tr: {
+            borderColor: "gray.200",
+            _hover: {
+              bg: colorMode === "dark" ? "gray.600" : "gray.50",
             },
+          },
+          caption: {
+            color: "pink",
+          },
+          tfoot: {
             tr: {
-                borderColor: 'gray.200',
-                _hover: {
-                    bg: 'gray.50'
-                }
-            }
-        },
-    },
+              "&:last-of-type": {
+                th: {
+                  borderBottomWidth: "100",
+                },
+              },
+            },
+          },
+        }),
+      },
 
     defaultProps: {
         colorScheme: 'gray',

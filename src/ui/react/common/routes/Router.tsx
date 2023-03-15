@@ -1,8 +1,8 @@
-import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { BooksPage } from '../../modules/Books/pages/BooksPage'
 import { HomePage } from '../../modules/Home/pages/HomePage'
 import { DashboardLayout } from '../layouts/DashboardLayout'
+import { NotFoundPage } from '../pages/NotFoundPage'
 
 export const Router = () => {
 
@@ -10,6 +10,7 @@ export const Router = () => {
     {
       path: "/",
       element: <DashboardLayout />,
+      errorElement: <NotFoundPage />,
       children: [
         {
           path: "dashboard",

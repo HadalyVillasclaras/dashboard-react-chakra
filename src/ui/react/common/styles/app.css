@@ -2,3 +2,19 @@
     margin: 0;
     padding: 0;
 }
+
+ul {
+    margin-inline-start: 0px !important;
+}
+
+main {
+    padding: 2rem;
+}
+
+svg {
+    display: inline !important;
+}
+
+img {
+    max-width: unset !important;
+}
