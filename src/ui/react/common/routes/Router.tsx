@@ -11,7 +11,7 @@ export const Router = () => {
     {
       path: "/",
       element: <DashboardLayout />,
-      errorElement: <NotFoundPage />,
+      // errorElement: <NotFoundPage />,
       children: [
         {
           path: "dashboard",

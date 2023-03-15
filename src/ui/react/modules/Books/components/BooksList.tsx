@@ -12,10 +12,13 @@ import {
   Tr,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import books from "../../../../../modules/core/books.json";
+import { Book } from "../../../../../modules/books/models/book.model";
 
-export const BooksList = () => {
-  console.log(books);
+interface Props {
+  books: Array<Book>
+}
+
+export const BooksList = ({books}: Props) => {
   return (
     <>
       <Box>
@@ -30,21 +33,21 @@ export const BooksList = () => {
                 <Th>Title</Th>
                 <Th>Author</Th>
                 <Th>Year</Th>
+                <Th>Language</Th>
                 <Th>Pages</Th>
                 <Th>Status</Th>
-                <Th>Description</Th>
                 <Th>Actions</Th>
               </Tr>
             </Thead>
             <Tbody>
-              {books.map((book: any, index) => {
+              {books?.map((book: any, index: any) => {
                 return (
                   <Tr key={index}>
                     <Td>{book.title}</Td>
                     <Td>{book.author}</Td>
                     <Td>{book.year}</Td>
+                    <Td>{book.language}</Td>
                     <Td>{book.pages}</Td>
-                    <Td>sold</Td>
                     <Td>x</Td>
                     <Td>                    
                       <ButtonGroup>
