@@ -9,14 +9,12 @@ export const Breadcrumbs = () => {
   let crumbs = matches
     .filter((match: any) => Boolean(match.handle?.crumb)) //elimina los que no tienen handle/crumb
     .map((match: any) => {
-      console.log(match.pathname);
 
       return (
         match.handle.crumb()
       )
     }); //
 
-  console.log(crumbs);
 
   return (
     <Box as="span" id="breadcrumbs">

@@ -1,5 +1,8 @@
-import booksLib from "../../core/books.json";
-
 export const getBooks = async() => {
-  return booksLib
+
+  const API_URL = 'http://localhost:3500/books';
+
+  const response = await fetch(API_URL);
+
+  return response
 }

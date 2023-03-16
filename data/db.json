@@ -1,0 +1,1203 @@
+{
+  "books": [
+  {
+    "id": 2,
+    "author": "Hans Christian Andersen",
+    "country": "Denmark",
+    "language": "Danish",
+    "link": "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\n",
+    "pages": 784,
+    "title": "Fairy tales",
+    "year": 1836
+  },
+  {
+    "author": "Dante Alighieri",
+    "country": "Italy",
+    "language": "Italian",
+    "link": "https://en.wikipedia.org/wiki/Divine_Comedy\n",
+    "pages": 928,
+    "title": "The Divine Comedy",
+    "year": 1315
+  },
+  {
+    "id": 2,
+    "author": "Jane Austen",
+    "country": "United Kingdom",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Pride_and_Prejudice\n",
+    "pages": 226,
+    "title": "Pride and Prejudice",
+    "year": 1813
+  },
+  {
+    "id": 3,
+    "author": "Honor\u00e9 de Balzac",
+    "country": "France",
+    "language": "French",
+    "link": "https://en.wikipedia.org/wiki/Le_P%C3%A8re_Goriot\n",
+    "pages": 443,
+    "title": "Le P\u00e8re Goriot",
+    "year": 1835
+  },
+  {
+    "id": 4,
+    "author": "Samuel Beckett",
+    "country": "Republic of Ireland",
+    "language": "French, English",
+    "link": "https://en.wikipedia.org/wiki/Molloy_(novel)\n",
+    "pages": 256,
+    "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
+    "year": 1952
+  },
+  {
+    "id": 5,
+    "author": "Giovanni Boccaccio",
+    "country": "Italy",
+    "imageLink": "images/the-decameron.jpg",
+    "language": "Italian",
+    "link": "https://en.wikipedia.org/wiki/The_Decameron\n",
+    "pages": 1024,
+    "title": "The Decameron",
+    "year": 1351
+  },
+  {
+    "author": "Jorge Luis Borges",
+    "country": "Argentina",
+    "imageLink": "images/ficciones.jpg",
+    "language": "Spanish",
+    "link": "https://en.wikipedia.org/wiki/Ficciones\n",
+    "pages": 224,
+    "title": "Ficciones",
+    "year": 1965
+  },
+  {
+    "author": "Albert Camus",
+    "country": "Algeria, French Empire",
+    "language": "French",
+    "link": "https://en.wikipedia.org/wiki/The_Stranger_(novel)\n",
+    "pages": 185,
+    "title": "The Stranger",
+    "year": 1942
+  },
+  {
+    "author": "Paul Celan",
+    "country": "Romania, France",
+    "language": "German",
+    "link": "\n",
+    "pages": 320,
+    "title": "Poems",
+    "year": 1952
+  },
+  {
+    "author": "Louis-Ferdinand C\u00e9line",
+    "country": "France",
+    "language": "French",
+    "link": "https://en.wikipedia.org/wiki/Journey_to_the_End_of_the_Night\n",
+    "pages": 505,
+    "title": "Journey to the End of the Night",
+    "year": 1932
+  },
+  {
+    "author": "Geoffrey Chaucer",
+    "country": "England",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/The_Canterbury_Tales\n",
+    "pages": 544,
+    "title": "The Canterbury Tales",
+    "year": 1450
+  },
+  {
+    "author": "Anton Chekhov",
+    "country": "Russia",
+    "language": "Russian",
+    "link": "https://en.wikipedia.org/wiki/List_of_short_stories_by_Anton_Chekhov\n",
+    "pages": 194,
+    "title": "Stories",
+    "year": 1886
+  },
+  {
+    "author": "Joseph Conrad",
+    "country": "United Kingdom",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Nostromo\n",
+    "pages": 320,
+    "title": "Nostromo",
+    "year": 1904
+  },
+  {
+    "author": "Denis Diderot",
+    "country": "France",
+    "imageLink": "images/jacques-the-fatalist.jpg",
+    "language": "French",
+    "link": "https://en.wikipedia.org/wiki/Jacques_the_Fatalist\n",
+    "pages": 596,
+    "title": "Jacques the Fatalist",
+    "year": 1796
+  },
+  {
+    "author": "Alfred D\u00f6blin",
+    "country": "Germany",
+    "language": "German",
+    "link": "https://en.wikipedia.org/wiki/Berlin_Alexanderplatz\n",
+    "pages": 600,
+    "title": "Berlin Alexanderplatz",
+    "year": 1929
+  },
+  {
+    "author": "Fyodor Dostoevsky",
+    "country": "Russia",
+    "language": "Russian",
+    "link": "https://en.wikipedia.org/wiki/Crime_and_Punishment\n",
+    "pages": 551,
+    "title": "Crime and Punishment",
+    "year": 1866
+  },
+  {
+    "author": "Fyodor Dostoevsky",
+    "country": "Russia",
+    "language": "Russian",
+    "link": "https://en.wikipedia.org/wiki/The_Idiot\n",
+    "pages": 656,
+    "title": "The Idiot",
+    "year": 1869
+  },
+  {
+    "author": "Fyodor Dostoevsky",
+    "country": "Russia",
+    "language": "Russian",
+    "link": "https://en.wikipedia.org/wiki/Demons_(Dostoyevsky_novel)\n",
+    "pages": 768,
+    "title": "The Possessed",
+    "year": 1872
+  },
+  {
+    "author": "Fyodor Dostoevsky",
+    "country": "Russia",
+    "language": "Russian",
+    "link": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov\n",
+    "pages": 824,
+    "title": "The Brothers Karamazov",
+    "year": 1880
+  },
+  {
+    "author": "George Eliot",
+    "country": "United Kingdom",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Middlemarch\n",
+    "pages": 800,
+    "title": "Middlemarch",
+    "year": 1871
+  },
+  {
+    "author": "Euripides",
+    "country": "Greece",
+    "language": "Greek",
+    "link": "https://en.wikipedia.org/wiki/Medea_(play)\n",
+    "pages": 104,
+    "title": "Medea",
+    "year": -431
+  },
+  {
+    "author": "William Faulkner",
+    "country": "United States",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Absalom,_Absalom!\n",
+    "pages": 313,
+    "title": "Absalom, Absalom!",
+    "year": 1936
+  },
+  {
+    "author": "William Faulkner",
+    "country": "United States",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/The_Sound_and_the_Fury\n",
+    "pages": 326,
+    "title": "The Sound and the Fury",
+    "year": 1929
+  },
+  {
+    "author": "Gustave Flaubert",
+    "country": "France",
+    "language": "French",
+    "link": "https://en.wikipedia.org/wiki/Madame_Bovary\n",
+    "pages": 528,
+    "title": "Madame Bovary",
+    "year": 1857
+  },
+  {
+    "author": "Gustave Flaubert",
+    "country": "France",
+    "language": "French",
+    "link": "https://en.wikipedia.org/wiki/Sentimental_Education\n",
+    "pages": 606,
+    "title": "Sentimental Education",
+    "year": 1869
+  },
+  {
+    "author": "Federico Garc\u00eda Lorca",
+    "country": "Spain",
+    "imageLink": "images/gypsy-ballads.jpg",
+    "language": "Spanish",
+    "link": "https://en.wikipedia.org/wiki/Gypsy_Ballads\n",
+    "pages": 218,
+    "title": "Gypsy Ballads",
+    "year": 1928
+  },
+  {
+    "author": "Gabriel Garc\u00eda M\u00e1rquez",
+    "country": "Colombia",
+    "language": "Spanish",
+    "link": "https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude\n",
+    "pages": 417,
+    "title": "One Hundred Years of Solitude",
+    "year": 1967
+  },
+  {
+    "author": "Gabriel Garc\u00eda M\u00e1rquez",
+    "country": "Colombia",
+    "language": "Spanish",
+    "link": "https://en.wikipedia.org/wiki/Love_in_the_Time_of_Cholera\n",
+    "pages": 368,
+    "title": "Love in the Time of Cholera",
+    "year": 1985
+  },
+  {
+    "author": "Johann Wolfgang von Goethe",
+    "country": "Saxe-Weimar",
+    "language": "German",
+    "link": "https://en.wikipedia.org/wiki/Goethe%27s_Faust\n",
+    "pages": 158,
+    "title": "Faust",
+    "year": 1832
+  },
+  {
+    "author": "Nikolai Gogol",
+    "country": "Russia",
+    "imageLink": "images/dead-souls.jpg",
+    "language": "Russian",
+    "link": "https://en.wikipedia.org/wiki/Dead_Souls\n",
+    "pages": 432,
+    "title": "Dead Souls",
+    "year": 1842
+  },
+  {
+    "author": "G\u00fcnter Grass",
+    "country": "Germany",
+    "imageLink": "images/the-tin-drum.jpg",
+    "language": "German",
+    "link": "https://en.wikipedia.org/wiki/The_Tin_Drum\n",
+    "pages": 600,
+    "title": "The Tin Drum",
+    "year": 1959
+  },
+  {
+    "author": "Jo\u00e3o Guimar\u00e3es Rosa",
+    "country": "Brazil",
+    "imageLink": "images/the-devil-to-pay-in-the-backlands.jpg",
+    "language": "Portuguese",
+    "link": "https://en.wikipedia.org/wiki/The_Devil_to_Pay_in_the_Backlands\n",
+    "pages": 494,
+    "title": "The Devil to Pay in the Backlands",
+    "year": 1956
+  },
+  {
+    "author": "Knut Hamsun",
+    "country": "Norway",
+    "imageLink": "images/hunger.jpg",
+    "language": "Norwegian",
+    "link": "https://en.wikipedia.org/wiki/Hunger_(Hamsun_novel)\n",
+    "pages": 176,
+    "title": "Hunger",
+    "year": 1890
+  },
+  {
+    "author": "Ernest Hemingway",
+    "country": "United States",
+    "imageLink": "images/the-old-man-and-the-sea.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea\n",
+    "pages": 128,
+    "title": "The Old Man and the Sea",
+    "year": 1952
+  },
+  {
+    "author": "Homer",
+    "country": "Greece",
+    "imageLink": "images/the-iliad-of-homer.jpg",
+    "language": "Greek",
+    "link": "https://en.wikipedia.org/wiki/Iliad\n",
+    "pages": 608,
+    "title": "Iliad",
+    "year": -735
+  },
+  {
+    "author": "Homer",
+    "country": "Greece",
+    "imageLink": "images/the-odyssey-of-homer.jpg",
+    "language": "Greek",
+    "link": "https://en.wikipedia.org/wiki/Odyssey\n",
+    "pages": 374,
+    "title": "Odyssey",
+    "year": -800
+  },
+  {
+    "author": "Henrik Ibsen",
+    "country": "Norway",
+    "imageLink": "images/a-Dolls-house.jpg",
+    "language": "Norwegian",
+    "link": "https://en.wikipedia.org/wiki/A_Doll%27s_House\n",
+    "pages": 68,
+    "title": "A Doll's House",
+    "year": 1879
+  },
+  {
+    "author": "James Joyce",
+    "country": "Irish Free State",
+    "imageLink": "images/ulysses.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Ulysses_(novel)\n",
+    "pages": 228,
+    "title": "Ulysses",
+    "year": 1922
+  },
+  {
+    "author": "Franz Kafka",
+    "country": "Czechoslovakia",
+    "imageLink": "images/stories-of-franz-kafka.jpg",
+    "language": "German",
+    "link": "https://en.wikipedia.org/wiki/Franz_Kafka_bibliography#Short_stories\n",
+    "pages": 488,
+    "title": "Stories",
+    "year": 1924
+  },
+  {
+    "author": "Franz Kafka",
+    "country": "Czechoslovakia",
+    "imageLink": "images/the-trial.jpg",
+    "language": "German",
+    "link": "https://en.wikipedia.org/wiki/The_Trial\n",
+    "pages": 160,
+    "title": "The Trial",
+    "year": 1925
+  },
+  {
+    "author": "Franz Kafka",
+    "country": "Czechoslovakia",
+    "imageLink": "images/the-castle.jpg",
+    "language": "German",
+    "link": "https://en.wikipedia.org/wiki/The_Castle_(novel)\n",
+    "pages": 352,
+    "title": "The Castle",
+    "year": 1926
+  },
+  {
+    "author": "K\u0101lid\u0101sa",
+    "country": "India",
+    "imageLink": "images/the-recognition-of-shakuntala.jpg",
+    "language": "Sanskrit",
+    "link": "https://en.wikipedia.org/wiki/Abhij%C3%B1%C4%81na%C5%9B%C4%81kuntalam\n",
+    "pages": 147,
+    "title": "The recognition of Shakuntala",
+    "year": 150
+  },
+  {
+    "author": "Yasunari Kawabata",
+    "country": "Japan",
+    "imageLink": "images/the-sound-of-the-mountain.jpg",
+    "language": "Japanese",
+    "link": "https://en.wikipedia.org/wiki/The_Sound_of_the_Mountain\n",
+    "pages": 288,
+    "title": "The Sound of the Mountain",
+    "year": 1954
+  },
+  {
+    "author": "Nikos Kazantzakis",
+    "country": "Greece",
+    "imageLink": "images/zorba-the-greek.jpg",
+    "language": "Greek",
+    "link": "https://en.wikipedia.org/wiki/Zorba_the_Greek\n",
+    "pages": 368,
+    "title": "Zorba the Greek",
+    "year": 1946
+  },
+  {
+    "author": "D. H. Lawrence",
+    "country": "United Kingdom",
+    "imageLink": "images/sons-and-lovers.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Sons_and_Lovers\n",
+    "pages": 432,
+    "title": "Sons and Lovers",
+    "year": 1913
+  },
+  {
+    "author": "Halld\u00f3r Laxness",
+    "country": "Iceland",
+    "imageLink": "images/independent-people.jpg",
+    "language": "Icelandic",
+    "link": "https://en.wikipedia.org/wiki/Independent_People\n",
+    "pages": 470,
+    "title": "Independent People",
+    "year": 1934
+  },
+  {
+    "author": "Giacomo Leopardi",
+    "country": "Italy",
+    "imageLink": "images/poems-giacomo-leopardi.jpg",
+    "language": "Italian",
+    "link": "\n",
+    "pages": 184,
+    "title": "Poems",
+    "year": 1818
+  },
+  {
+    "author": "Doris Lessing",
+    "country": "United Kingdom",
+    "imageLink": "images/the-golden-notebook.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/The_Golden_Notebook\n",
+    "pages": 688,
+    "title": "The Golden Notebook",
+    "year": 1962
+  },
+  {
+    "author": "Astrid Lindgren",
+    "country": "Sweden",
+    "imageLink": "images/pippi-longstocking.jpg",
+    "language": "Swedish",
+    "link": "https://en.wikipedia.org/wiki/Pippi_Longstocking\n",
+    "pages": 160,
+    "title": "Pippi Longstocking",
+    "year": 1945
+  },
+  {
+    "author": "Lu Xun",
+    "country": "China",
+    "imageLink": "images/diary-of-a-madman.jpg",
+    "language": "Chinese",
+    "link": "https://en.wikipedia.org/wiki/A_Madman%27s_Diary\n",
+    "pages": 389,
+    "title": "Diary of a Madman",
+    "year": 1918
+  },
+  {
+    "author": "Naguib Mahfouz",
+    "country": "Egypt",
+    "imageLink": "images/children-of-gebelawi.jpg",
+    "language": "Arabic",
+    "link": "https://en.wikipedia.org/wiki/Children_of_Gebelawi\n",
+    "pages": 355,
+    "title": "Children of Gebelawi",
+    "year": 1959
+  },
+  {
+    "author": "Thomas Mann",
+    "country": "Germany",
+    "imageLink": "images/buddenbrooks.jpg",
+    "language": "German",
+    "link": "https://en.wikipedia.org/wiki/Buddenbrooks\n",
+    "pages": 736,
+    "title": "Buddenbrooks",
+    "year": 1901
+  },
+  {
+    "author": "Thomas Mann",
+    "country": "Germany",
+    "imageLink": "images/the-magic-mountain.jpg",
+    "language": "German",
+    "link": "https://en.wikipedia.org/wiki/The_Magic_Mountain\n",
+    "pages": 720,
+    "title": "The Magic Mountain",
+    "year": 1924
+  },
+  {
+    "author": "Herman Melville",
+    "country": "United States",
+    "imageLink": "images/moby-dick.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Moby-Dick\n",
+    "pages": 378,
+    "title": "Moby Dick",
+    "year": 1851
+  },
+  {
+    "author": "Michel de Montaigne",
+    "country": "France",
+    "imageLink": "images/essais.jpg",
+    "language": "French",
+    "link": "https://en.wikipedia.org/wiki/Essays_(Montaigne)\n",
+    "pages": 404,
+    "title": "Essays",
+    "year": 1595
+  },
+  {
+    "author": "Elsa Morante",
+    "country": "Italy",
+    "imageLink": "images/history.jpg",
+    "language": "Italian",
+    "link": "https://en.wikipedia.org/wiki/History_(novel)\n",
+    "pages": 600,
+    "title": "History",
+    "year": 1974
+  },
+  {
+    "author": "Toni Morrison",
+    "country": "United States",
+    "imageLink": "images/beloved.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Beloved_(novel)\n",
+    "pages": 321,
+    "title": "Beloved",
+    "year": 1987
+  },
+  {
+    "author": "Murasaki Shikibu",
+    "country": "Japan",
+    "imageLink": "images/the-tale-of-genji.jpg",
+    "language": "Japanese",
+    "link": "https://en.wikipedia.org/wiki/The_Tale_of_Genji\n",
+    "pages": 1360,
+    "title": "The Tale of Genji",
+    "year": 1006
+  },
+  {
+    "author": "Robert Musil",
+    "country": "Austria",
+    "imageLink": "images/the-man-without-qualities.jpg",
+    "language": "German",
+    "link": "https://en.wikipedia.org/wiki/The_Man_Without_Qualities\n",
+    "pages": 365,
+    "title": "The Man Without Qualities",
+    "year": 1931
+  },
+  {
+    "author": "Vladimir Nabokov",
+    "country": "Russia/United States",
+    "imageLink": "images/lolita.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Lolita\n",
+    "pages": 317,
+    "title": "Lolita",
+    "year": 1955
+  },
+  {
+    "author": "George Orwell",
+    "country": "United Kingdom",
+    "imageLink": "images/nineteen-eighty-four.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four\n",
+    "pages": 272,
+    "title": "Nineteen Eighty-Four",
+    "year": 1949
+  },
+  {
+    "author": "Ovid",
+    "country": "Roman Empire",
+    "imageLink": "images/the-metamorphoses-of-ovid.jpg",
+    "language": "Classical Latin",
+    "link": "https://en.wikipedia.org/wiki/Metamorphoses\n",
+    "pages": 576,
+    "title": "Metamorphoses",
+    "year": 100
+  },
+  {
+    "author": "Fernando Pessoa",
+    "country": "Portugal",
+    "imageLink": "images/the-book-of-disquiet.jpg",
+    "language": "Portuguese",
+    "link": "https://en.wikipedia.org/wiki/The_Book_of_Disquiet\n",
+    "pages": 272,
+    "title": "The Book of Disquiet",
+    "year": 1928
+  },
+  {
+    "author": "Edgar Allan Poe",
+    "country": "United States",
+    "imageLink": "images/tales-and-poems-of-edgar-allan-poe.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Edgar_Allan_Poe_bibliography#Tales\n",
+    "pages": 842,
+    "title": "Tales",
+    "year": 1950
+  },
+  {
+    "author": "Marcel Proust",
+    "country": "France",
+    "imageLink": "images/a-la-recherche-du-temps-perdu.jpg",
+    "language": "French",
+    "link": "https://en.wikipedia.org/wiki/In_Search_of_Lost_Time\n",
+    "pages": 2408,
+    "title": "In Search of Lost Time",
+    "year": 1920
+  },
+  {
+    "author": "Fran\u00e7ois Rabelais",
+    "country": "France",
+    "imageLink": "images/gargantua-and-pantagruel.jpg",
+    "language": "French",
+    "link": "https://en.wikipedia.org/wiki/Gargantua_and_Pantagruel\n",
+    "pages": 623,
+    "title": "Gargantua and Pantagruel",
+    "year": 1533
+  },
+  {
+    "author": "Juan Rulfo",
+    "country": "Mexico",
+    "imageLink": "images/pedro-paramo.jpg",
+    "language": "Spanish",
+    "link": "https://en.wikipedia.org/wiki/Pedro_P%C3%A1ramo\n",
+    "pages": 124,
+    "title": "Pedro P\u00e1ramo",
+    "year": 1955
+  },
+  {
+    "author": "Rumi",
+    "country": "Sultanate of Rum",
+    "imageLink": "images/the-masnavi.jpg",
+    "language": "Persian",
+    "link": "https://en.wikipedia.org/wiki/Masnavi\n",
+    "pages": 438,
+    "title": "The Masnavi",
+    "year": 1236
+  },
+  {
+    "author": "Salman Rushdie",
+    "country": "United Kingdom, India",
+    "imageLink": "images/midnights-children.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Midnight%27s_Children\n",
+    "pages": 536,
+    "title": "Midnight's Children",
+    "year": 1981
+  },
+  {
+    "author": "Saadi",
+    "country": "Persia, Persian Empire",
+    "imageLink": "images/bostan.jpg",
+    "language": "Persian",
+    "link": "https://en.wikipedia.org/wiki/Bustan_(book)\n",
+    "pages": 298,
+    "title": "Bostan",
+    "year": 1257
+  },
+  {
+    "author": "Tayeb Salih",
+    "country": "Sudan",
+    "imageLink": "images/season-of-migration-to-the-north.jpg",
+    "language": "Arabic",
+    "link": "https://en.wikipedia.org/wiki/Season_of_Migration_to_the_North\n",
+    "pages": 139,
+    "title": "Season of Migration to the North",
+    "year": 1966
+  },
+  {
+    "author": "Jos\u00e9 Saramago",
+    "country": "Portugal",
+    "imageLink": "images/blindness.jpg",
+    "language": "Portuguese",
+    "link": "https://en.wikipedia.org/wiki/Blindness_(novel)\n",
+    "pages": 352,
+    "title": "Blindness",
+    "year": 1995
+  },
+  {
+    "author": "William Shakespeare",
+    "country": "England",
+    "imageLink": "images/hamlet.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Hamlet\n",
+    "pages": 432,
+    "title": "Hamlet",
+    "year": 1603
+  },
+  {
+    "author": "William Shakespeare",
+    "country": "England",
+    "imageLink": "images/king-lear.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/King_Lear\n",
+    "pages": 384,
+    "title": "King Lear",
+    "year": 1608
+  },
+  {
+    "author": "William Shakespeare",
+    "country": "England",
+    "imageLink": "images/othello.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Othello\n",
+    "pages": 314,
+    "title": "Othello",
+    "year": 1609
+  },
+  {
+    "author": "Sophocles",
+    "country": "Greece",
+    "imageLink": "images/oedipus-the-king.jpg",
+    "language": "Greek",
+    "link": "https://en.wikipedia.org/wiki/Oedipus_the_King\n",
+    "pages": 88,
+    "title": "Oedipus the King",
+    "year": -430
+  },
+  {
+    "author": "Stendhal",
+    "country": "France",
+    "imageLink": "images/le-rouge-et-le-noir.jpg",
+    "language": "French",
+    "link": "https://en.wikipedia.org/wiki/The_Red_and_the_Black\n",
+    "pages": 576,
+    "title": "The Red and the Black",
+    "year": 1830
+  },
+  {
+    "author": "Laurence Sterne",
+    "country": "England",
+    "imageLink": "images/the-life-and-opinions-of-tristram-shandy.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/The_Life_and_Opinions_of_Tristram_Shandy,_Gentleman\n",
+    "pages": 640,
+    "title": "The Life And Opinions of Tristram Shandy",
+    "year": 1760
+  },
+  {
+    "author": "Italo Svevo",
+    "country": "Italy",
+    "imageLink": "images/confessions-of-zeno.jpg",
+    "language": "Italian",
+    "link": "https://en.wikipedia.org/wiki/Zeno%27s_Conscience\n",
+    "pages": 412,
+    "title": "Confessions of Zeno",
+    "year": 1923
+  },
+  {
+    "author": "Jonathan Swift",
+    "country": "Ireland",
+    "imageLink": "images/gullivers-travels.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Gulliver%27s_Travels\n",
+    "pages": 178,
+    "title": "Gulliver's Travels",
+    "year": 1726
+  },
+  {
+    "author": "Leo Tolstoy",
+    "country": "Russia",
+    "imageLink": "images/war-and-peace.jpg",
+    "language": "Russian",
+    "link": "https://en.wikipedia.org/wiki/War_and_Peace\n",
+    "pages": 1296,
+    "title": "War and Peace",
+    "year": 1867
+  },
+  {
+    "author": "Leo Tolstoy",
+    "country": "Russia",
+    "imageLink": "images/anna-karenina.jpg",
+    "language": "Russian",
+    "link": "https://en.wikipedia.org/wiki/Anna_Karenina\n",
+    "pages": 864,
+    "title": "Anna Karenina",
+    "year": 1877
+  },
+  {
+    "author": "Leo Tolstoy",
+    "country": "Russia",
+    "imageLink": "images/the-death-of-ivan-ilyich.jpg",
+    "language": "Russian",
+    "link": "https://en.wikipedia.org/wiki/The_Death_of_Ivan_Ilyich\n",
+    "pages": 92,
+    "title": "The Death of Ivan Ilyich",
+    "year": 1886
+  },
+  {
+    "author": "Mark Twain",
+    "country": "United States",
+    "imageLink": "images/the-adventures-of-huckleberry-finn.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Adventures_of_Huckleberry_Finn\n",
+    "pages": 224,
+    "title": "The Adventures of Huckleberry Finn",
+    "year": 1884
+  },
+  {
+    "author": "Valmiki",
+    "country": "India",
+    "imageLink": "images/ramayana.jpg",
+    "language": "Sanskrit",
+    "link": "https://en.wikipedia.org/wiki/Ramayana\n",
+    "pages": 152,
+    "title": "Ramayana",
+    "year": -450
+  },
+  {
+    "author": "Virgil",
+    "country": "Roman Empire",
+    "imageLink": "images/the-aeneid.jpg",
+    "language": "Classical Latin",
+    "link": "https://en.wikipedia.org/wiki/Aeneid\n",
+    "pages": 442,
+    "title": "The Aeneid",
+    "year": -23
+  },
+  {
+    "author": "Vyasa",
+    "country": "India",
+    "imageLink": "images/the-mahab-harata.jpg",
+    "language": "Sanskrit",
+    "link": "https://en.wikipedia.org/wiki/Mahabharata\n",
+    "pages": 276,
+    "title": "Mahabharata",
+    "year": -700
+  },
+  {
+    "author": "Walt Whitman",
+    "country": "United States",
+    "imageLink": "images/leaves-of-grass.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Leaves_of_Grass\n",
+    "pages": 152,
+    "title": "Leaves of Grass",
+    "year": 1855
+  },
+  {
+    "author": "Virginia Woolf",
+    "country": "United Kingdom",
+    "imageLink": "images/mrs-dalloway.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/Mrs_Dalloway\n",
+    "pages": 216,
+    "title": "Mrs Dalloway",
+    "year": 1925
+  },
+  {
+    "author": "Virginia Woolf",
+    "country": "United Kingdom",
+    "imageLink": "images/to-the-lighthouse.jpg",
+    "language": "English",
+    "link": "https://en.wikipedia.org/wiki/To_the_Lighthouse\n",
+    "pages": 209,
+    "title": "To the Lighthouse",
+    "year": 1927
+  },
+  {
+    "author": "Marguerite Yourcenar",
+    "country": "France/Belgium",
+    "imageLink": "images/memoirs-of-hadrian.jpg",
+    "language": "French",
+    "link": "https://en.wikipedia.org/wiki/Memoirs_of_Hadrian\n",
+    "pages": 408,
+    "title": "Memoirs of Hadrian",
+    "year": 1951
+  }
+],
+"meta": [
+  {
+    "id":1,
+    "pages": 2
+  }
+],
+"books2": [
+  {
+    "isbn": "9781137332127",
+    "title": "Postcolonial George Eliot",
+    "author": "Oliver Lovesey",
+    "url": "http://books.google.com/books/content?id=r6MxDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "This book examines the range of the colonial imaginary in Eliot’s works, from the domestic and regional to ancient and speculative colonialisms. It challenges monolithic, hegemonic views of George Eliot — whose novelistic career paralleled the creation of British India — and also dismissals of the postcolonial as ahistorical. It uncovers often-overlooked colonized figures in the novels. It also investigates Victorian Islamophobia in light of Eliot’s impatience with ignorance, intolerance, and xenophobia as well as her interrogation of the make-believe of endings. Drawing on a range of sources from Eugène Bodichon’s Algerian anthropological texts, the Persian journals of John Martyn, and postmodern re-engagements, Postcolonial George Eliot has implications for an understanding of the globalization of English, the decolonization of disciplinarity and periodization, and the roots of present-day conflict in the wider Mediterranean world."
+  },
+  {
+    "isbn": "9780679641438",
+    "title": "Absalom, Absalom!",
+    "author": "William Faulkner",
+    "url": "http://books.google.com/books/content?id=bSW6uk_CzXUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "“Read, read, read. Read everything—trash, classics, good and bad, and see how they do it. Just like a carpenter who works as an apprentice and studies the master. Read! You’ll absorb it. Then write. If it is good, you’ll find out. If it’s not, throw it out the window.” —William Faulkner Absalom, Absalom! is Faulkner’s epic tale of Thomas Sutpen, an enigmatic stranger who comes to Jefferson, Mississippi, in the early 1830s to wrest his mansion out of the muddy bottoms of the north Mississippi wilderness. He was a man, Faulkner said, “who wanted sons and the sons destroyed him.” From the Trade Paperback edition."
+  },
+  {
+    "isbn": "817625598X",
+    "title": "Widening Horizons",
+    "subtitle": "Essays in Honour of Professor Mohit K. Ray",
+    "author": "Mohit Kumar Ray",
+    "url": "http://books.google.com/books/content?id=wIC9cdVrAnwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "Mohit K. Ray, b.1940, former Professor of English, Burdwan University; contributed articles."
+  },
+  {
+    "isbn": "9783736813762",
+    "title": "Ulysses (Annotated)",
+    "author": "James Joyce",
+    "url": "http://books.google.com/books/content?id=aVu0AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "Ulysses (1922) is a novel by the Irish author James Joyce. It was first serialised in parts in the American journal The Little Review from March 1918 to December 1920, and then published in its entirety by Sylvia Beach on 2 February 1922, in Paris. Joyce's technical innovations in the art of the novel... he used a complex network of symbolic parallels drawn from the mythology, history, and literature, and created a unique language of invented words, puns, and allusions. One of the most important works of Modernist literature, it has been called \"a demonstration and summation of the entire movement\". \"Before Joyce, no writer of fiction had so foregrounded the process of thinking.\" Written over a seven-year period from 1914 to 1921. No book has ever been more eagerly and curiously awaited by the strange little inner circle of book-lovers and littérateurs than James Joyce's \"Ulysses\"."
+  },
+  {
+    "isbn": "9781365943522",
+    "title": "To the Lighthouse",
+    "author": "Virginia Woolf",
+    "url": "http://books.google.com/books/content?id=rEEkDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "To the Lighthouse is a 1927 novel by Virginia Woolf. A landmark of high modernism, the novel centres on the Ramsays and their visits to the Isle of Skye in Scotland between 1910 and 1920. Following and extending the tradition of modernist novelists like Marcel Proust and James Joyce, the plot of To the Lighthouse is secondary to its philosophical introspection. The novel includes little dialogue and almost no action; most of it is written as thoughts and observations. The novel recalls childhood emotions and highlights adult relationships. Among the book's many tropes and themes are those of loss, subjectivity, and the problem of perception. In 1998, the Modern Library named To the Lighthouse No. 15 on its list of the 100 best English-language novels of the 20th century.In 2005, the novel was chosen byTIME magazine as one of the one hundred best English-language novels from 1923 to present."
+  },
+  {
+    "isbn": "0140442898",
+    "title": "Tales from the Thousand and One Nights",
+    "author": "N.J. Dawood",
+    "url": "http://books.google.com/books/content?id=jA7LH1qZq14C&printsec=frontcover&img=1&zoom=1&source=gbs_api&zoom=20",
+    "description": "A selection of the tales told by Shahrazad in an attempt to save her life, including \"The Young Woman and Her Five Lovers\", \"The Fisherman and the Jinnee\", \"The Historic Fart\", and \"The Tale of Kafur the Black Eunuch\"."
+  },
+  {
+    "isbn": "9781451689433",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "url": "http://books.google.com/books/content?id=pJ8wBzbuclEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "A young man, newly rich, tries to recapture the past and win back his former love, despite the fact that she has married."
+  },
+  {
+    "isbn": "0559128827",
+    "title": "Leaves of Grass",
+    "author": "Walt Whitman",
+    "url": "http://books.google.com/books/content?id=NpAHqTmP9OQC&printsec=frontcover&img=1&zoom=1&source=gbs_api&zoom=20",
+    "description": "Whitman is today regarded as America's Homer or Dante, and his work the touchstone for literary originality in the New World. In Leaves of Grass, he abandoned the rules of traditional poetry - breaking the standard metered line, discarding the obligatory rhyming scheme, and using the vernacular. Emily Dickinson condemned his sexual and physiological allusions as disgraceful', but Emerson saw the book as the most extraordinary piece of wit and wisdom that America has yet contributed'. A century later it is his judgment of this autobiographical vision of the vigor of the American nation that has proved the more enduring."
+  },
+
+  {
+    "isbn": "9781440513558",
+    "title": "The Bibliophile's Devotional",
+    "subtitle": "365 Days of Literary Classics",
+    "author": "Hallie Ephron",
+    "url": "http://books.google.com/books/content?id=iR3rDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "What better way to start a day than with inspiration from a literary classic? Now you can do just that. In this book, praised author and critic Hallie Ephron delivers a daily dose of literary knowledge. A brilliant companion to the canon of great literature, it's perfect for anyone who wants a novel way to energize each day. Ephron's work is a secular twist on the traditional devotional and provides concise plot summaries, sketches of standout characters, quotations you should know, and more about hundreds of books by tried-and-true authors as well as new literary voices. Whether it's coffee with Austen, a quick lunch with Faulkner, or an end-of-the-day jolt with Chabon, this book proves a good book is a great source of daily inspiration."
+  },
+  {
+    "isbn": "0393912698",
+    "title": "The Sound and the Fury",
+    "subtitle": "An Authoritative Text, Backgrounds and Contexts, Criticism",
+    "author": "William Faulkner",
+    "url": "http://books.google.com/books/content?id=vo2OnAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&zoom=20",
+    "description": "William Faulkner, The Sound and the Fury\""
+  },
+  {
+    "isbn": "HARVARD:32044021660501",
+    "title": "Great Expectations",
+    "author": "Charles Dickens",
+    "url": "http://books.google.com/books/content?id=QpZPpB3aOlwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20"
+  },
+  {
+    "isbn": "9786050452464",
+    "title": "Within A Budding Grove",
+    "author": "Marcel Proust",
+    "url": "http://books.google.com/books/content?id=O0pPDAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&zoom=20",
+    "description": "My mother, when it was a question of our having M. de Norpois to dinner for the first time, having expressed her regret that Professor Cottard was away from home, and that she herself had quite ceased to see anything of Swann, since either of these might have helped to entertain the old Ambassador, my father replied that so eminent a guest, so distinguished a man of science as Cottard could never be out of place at a dinner-table, but that Swann, with his ostentation, his habit of crying aloud from the housetops the name of everyone that he knew, however slightly, was an impossible vulgarian whom the Marquis de Norpois would be sure to dismiss as—to use his own epithet—a 'pestilent' fellow."
+  },
+  {
+    "isbn": "9780679732259",
+    "title": "As I Lay Dying",
+    "subtitle": "The Corrected Text",
+    "author": "William Faulkner",
+    "url": "http://books.google.com/books/content?id=D4SLDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "Recounts the Bundren family's odyssey across the Mississippi countryside to bury Addie, their wife and mother, through the eyes of each of the family members"
+  },
+  {
+    "isbn": "1511660376",
+    "title": "Joseph Conrad Novel Combo Volume I",
+    "": "Heart of Darkness, the Secret Agent, Lord Jim (Joseph Conrad Masterpiece Collection)",
+    "author": "Joseph Conrad",
+    "url": "http://books.google.com/books/content?id=2i6SrgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&zoom=20",
+    "description": "Heart of Darkness, The Secret Agent, Lord Jim (Joseph Conrad Masterpiece Collection)"
+  },
+  {
+    "isbn": "9780143107637",
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoyevsky",
+    "url": "http://books.google.com/books/content?id=u7MBDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "Drawing upon experiences from his own prison days, the author recounts in feverish tones the story of Raskolnikov, an impoverished student tormented by his own nihilism, and the struggle between good and evil. Believing that he is above the law, and convinced that humanitarian ends justify vile means, he brutally murders an old woman -- a pawnbroker whom he regards as \"stupid, ailing, greedy... good for nothing.\" Overwhelmed afterwards by feelings of guilt and terror, Raskolnikov confesses to the crime and goes to prison. There he realizes that happiness and redemption can only be achieved through suffering."
+  },
+  {
+    "isbn": "9781786561404",
+    "title": "Jane Eyre by Charlotte Bronte (Illustrated)",
+    "author": "Charlotte Bronte",
+    "url": "http://books.google.com/books/content?id=sbovDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "This eBook features the unabridged text of ‘Jane Eyre’ from the bestselling edition of ‘The Complete Works of The Brontes’. Having established their name as the leading publisher of classic literature and art, Delphi Classics produce publications that are individually crafted with superior formatting, while introducing many rare texts for the first time in digital print. The Delphi Classics edition of Brontes includes original annotations and illustrations relating to the life and works of the author, as well as individual tables of contents, allowing you to navigate eBooks quickly and easily. eBook features: * The complete unabridged text of ‘Jane Eyre’ * Beautifully illustrated with images related to Brontes’s works * Individual contents table, allowing easy navigation around the eBook * Excellent formatting of the text Please visit www.delphiclassics.com to learn more about our wide range of titles"
+  },
+  {
+    "isbn": "0140449124",
+    "title": "Madame Bovary",
+    "author": "Gustave Flaubert",
+    "url": "http://books.google.com/books/content?id=Cg5CwY-GAl0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "An unhappily married woman, Emma Bovary's unfulfilled dreams of romantic love and desperation to escape the ordinary boredom of her life lead her to a series of desperate acts, including adultery, in a classic novel set against the backdrop of nineteenth-"
+  },
+  {
+    "isbn": "9783736802391",
+    "title": "The Trial",
+    "author": "Franz Kafka",
+    "url": "http://books.google.com/books/content?id=OCZqAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "The Trial is a novel written by Franz Kafka. One of Kafka's best-known works, it tells the story of a man arrested and prosecuted by a remote, inaccessible authority, with the nature of his crime revealed to neither him nor the reader. The terrifying tale of Joseph K, a respectable functionary in a bank, who is suddenly arrested and must defend his innocence against a charge about which he can get no information. A nightmare vision of the excesses of modern bureaucracy wedded to the mad agendas of twentieth-century totalitarian regimes. Look at Joseph K., a bank officer living in a country with a constitution. He wakes up one day with strange men in his apartment telling him he's under arrest. Why or for what offense, no one knows. The arresting officers themselves don't know and can't tell him. Even if he's under arrest, however, no one picks him up or locks him in jail. He can still go to his office, work, perform his customary daily chores, and do whatever he wants to do as he awaits his trial. But he is understandably anxious and worried. He is, after all, charged with an unknown but very grave offense. He has a criminal case. He is an accused. He is under arrest. For this problem he consults so many. He gets a lawyer. His uncle comes to his aid. He talks with his lawyer's other client--also charged and under arrest like him. He consults other people, a painter (who is said to know the \"Court\"), some women, a priest, etc. about his case. But no one can tell him what the charge is and what his sentence will be. The \"Examining Magistrate,\" the \"Judges,\" the \"Court,\" the proceedings/ trial, and even the \"Law\" itself--they all seem to be unsolvable enigmas."
+  },
+  {
+    "isbn": "9788892571440",
+    "title": "The Red and the Black",
+    "author": "Stendhal",
+    "url": "http://books.google.com/books/content?id=m_6_CwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "The Red and the Black, Stendhal’s masterpiece, is the story of Julien Sorel, a young dreamer from the provinces, fueled by Napoleonic ideals, whose desire to make his fortune sets in motion events both mesmerizing and tragic. Sorel’s quest to find himself, and the doomed love he encounters along the way, are delineated with an unprecedented psychological depth and realism. At the same time, Stendhal weaves together the social life and fraught political intrigues of post–Napoleonic France, bringing that world to unforgettable, full-color life. His portrait of Julien and early-nineteenth-century France remains an unsurpassed creation, one that brilliantly anticipates modern literature."
+  },
+  {
+    "isbn": "9781447956570",
+    "title": "Level 2: Moby Dick",
+    "author": "Herman Melville",
+    "url": "http://books.google.com/books/content?id=IQ7aDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "Classic / British English Moby Dick is the most dangerous whale in the oceans. Captain Ahab fought him and lost a leg. Now he hates Moby Dick. He wants to kill him. But can Captain Ahab and his men find the great white whale? A young sailor, Ishmael, tells the story of their exciting and dangerous trip."
+  },
+  {
+    "isbn": "9780307827661",
+    "title": "The Stranger",
+    "author": "Albert Camus",
+    "url": "http://books.google.com/books/content?id=7qylv1KYf0kC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "Through the story of an ordinary man unwittingly drawn into a senseless murder on an Algerian beach, Camus explored what he termed \"the nakedness of man faced with the absurd.\" First published in 1946; now in a new translation by Matthew Ward."
+  },
+  {
+    "isbn": "1585102288",
+    "title": "Aeneid 4",
+    "author": "Randall Ganiban",
+    "url": "http://books.google.com/books/content?id=JOpEAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&zoom=20",
+    "description": "This edition is part of a new series of commentaries on the Aeneid. Each volume is edited by a scholar of Roman epic and designed with the needs of today's college Latin students in mind. A two-volume edition of all books in the Aeneid will be derived from the series. This is Book Four in the series."
+  },
+  {
+    "isbn": "030738862X",
+    "title": "Beloved",
+    "author": "Toni Morrison",
+    "url": "http://books.google.com/books/content?id=sfmp6gjZGP8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "Staring unflinchingly into the abyss of slavery, this spellbinding novel transforms history into a story as powerful as Exodus and as intimate as a lullaby. Sethe, its protagonist, was born a slave and escaped to Ohio, but eighteen years later she is still not free. She has too many memories of Sweet Home, the beautiful farm where so many hideous things happened. And Sethe’s new home is haunted by the ghost of her baby, who died nameless and whose tombstone is engraved with a single word: Beloved. Filled with bitter poetry and suspense as taut as a rope, Beloved is a towering achievement."
+  },
+  {
+    "isbn": "9780060531041",
+    "title": "One Hundred Years of Solitude",
+    "author": "Gabriel Garcia Marquez",
+    "url": "http://books.google.com/books/content?id=pgPWOaOctq8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "One of the 20th century's enduring works, One Hundred Years of Solitude is a widely beloved and acclaimed novel known throughout the world, and the ultimate achievement in a Nobel Prize–winning career. The novel tells the story of the rise and fall of the mythical town of Macondo through the history of the Buendía family. It is a rich and brilliant chronicle of life and death, and the tragicomedy of humankind. In the noble, ridiculous, beautiful, and tawdry story of the Buendía family, one sees all of humanity, just as in the history, myths, growth, and decay of Macondo, one sees all of Latin America. Love and lust, war and revolution, riches and poverty, youth and senility -- the variety of life, the endlessness of death, the search for peace and truth -- these universal themes dominate the novel. Whether he is describing an affair of passion or the voracity of capitalism and the corruption of government, Gabriel García Márquez always writes with the simplicity, ease, and purity that are the mark of a master. Alternately reverential and comical, One Hundred Years of Solitude weaves the political, personal, and spiritual to bring a new consciousness to storytelling. Translated into dozens of languages, this stunning work is no less than an accounting of the history of the human race."
+  },
+  {
+    "isbn": "HARVARD:HN38EP",
+    "title": "Hamlet: Appendix",
+    "author": "William Shakespeare",
+    "url": "http://books.google.com/books/content?id=ocsOAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20"
+  },
+  {
+    "isbn": "9781784043735",
+    "title": "1984",
+    "subtitle": "",
+    "author": "George Orwell",
+    "url": "http://books.google.com/books/content?id=uyr8BAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "George Orwell's dystopian masterpiece, Nineteen Eighty-Four is perhaps the most pervasively influential book of the twentieth century, making famous Big Brother, newspeak and Room 101. 'Who controls the past controls the future: who controls the present controls the past'"
+  },
+  {
+    "isbn": "9053566325",
+    "title": "Divine Comedies for the New Millennium",
+    "subtitle": "Recent Dante Translations in America and the Netherlands",
+    "author": "Ronald de Rooy",
+    "url": "http://books.google.com/books/content?id=LQ9AjRolYX4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "Annotation Elizabeth A. Kaye specializes in communications as part of her coaching and consulting practice. She has edited Requirements for Certification since the 2000-01 edition."
+  },
+  {
+    "isbn": "9780141974248",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "url": "http://books.google.com/books/content?id=o4sj4oeu_00C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "'No sooner had he made it clear to himself and his friends that she had hardly a good feature in her face, than he began to find it was rendered uncommonly intelligent by the beautiful expression of her dark eyes ...' When Elizabeth Bennet first meets eligible bachelor Fitzwilliam Darcy, she thinks him arrogant and conceited; he is indifferent to her good looks and lively mind. When she later discovers that Darcy has involved himself in the troubled relationship between his friend Bingley and her beloved sister Jane, she is determined to dislike him more than ever. In the sparkling comedy of manners that follows, Jane Austen shows the folly of judging by first impressions and superbly evokes the friendships, gossip and snobberies of provincial middle-class life. The Penguin English Library - 100 editions of the best fiction in English, from the eighteenth century and the very first novels to the beginning of the First World War."
+  },
+  {
+    "isbn": "1517020131",
+    "title": "The Catcher in the Rye",
+    "author": "J. D. Salinger",
+    "url": "http://books.google.com/books/content?id=3_sfjgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&zoom=20",
+    "description": "Holden begins his story at Pencey Preparatory, an exclusive private school (fictional, though based on Salinger's own experience at Valley Forge Military Academy) in Agerstown, Pennsylvania, on the Saturday afternoon of the traditional football game with rival school Saxon Hall. Holden ends up missing the game. As manager of the fencing team, he loses their equipment on a New York City subway train that morning, resulting in the cancellation of a match. He goes to the home of his history teacher named Mr. Spencer. Holden has been expelled and isn't to return after Christmas break, which begins the following Wednesday. Spencer is a well-meaning but long-winded middle-aged man. To Holden's annoyance, Spencer reads aloud Holden's history paper, in which Holden wrote a note to Spencer so his teacher wouldn't feel bad about failing him in the subject."
+  },
+  {
+    "isbn": "9780385074070",
+    "title": "Complete Stories and Poems of Edgar Allan Poe",
+    "author": "Edgar Allan Poe",
+    "url": "http://books.google.com/books/content?id=Wa3rvqZL_yUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "A complete collection of the writings of Poe, including his mysteries, fantasies, satires, and poems"
+  },
+  {
+    "isbn": "9781311343079",
+    "title": "Anna Karenina - 101 Amazingly True Facts You Didn't Know",
+    "subtitle": "Fun Facts and Trivia Tidbits Quiz Game Books",
+    "author": "G Whiz",
+    "url": "http://books.google.com/books/content?id=tXhkAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "Did you know although the original version of the book has such high praises, the recent 2012 film adaptation was slammed by critics? Or, did you know after being described by his teachers as \"both unable and unwilling to learn\", Tolstoy left university? What are the amazingly true facts behind Anna Karenina by Leo Tolstoy? Do you want to know the golden nuggets of facts readers love? If you've enjoyed the book, then this will be a must read delight for you! Collected for readers everywhere are 101 book facts about the book & author that are fun, down-to-earth, and amazingly true to keep you laughing and learning as you read through the book! Tips & Tricks to Enhance Reading Experience • Enter \"G Whiz\" after your favorite title to see if publication exists! ie) Harry Potter G Whiz • Enter \"G Whiz 101\" to search for entire catalogue! • If not found, request to have your choice created by using form on our website! • Combine your favorite titles to receive bundle coupons! • Write a review when you're done to hop on the list of contributors! “Get ready for fun, down-to-earth, and amazingly true facts that keeps you learning as you read through the book” - G Whiz DISCLAIMER: Although the Author and Publisher strived to be accurate and verify all contributions by readers, due to the nature of research this publication should not be deemed as an authoritative source and no content should be used for citation purposes. All facts come with source URLS for further reading. This publication is meant for entertainment purposes to provide the best collection of facts possible. Refined and tested for quality, we provide a 100% satisfaction guarantee or your money back."
+  },
+  {
+    "isbn": "9780670016914",
+    "title": "The Grapes of Wrath",
+    "author": "John Steinbeck",
+    "url": "http://books.google.com/books/content?id=r8-KDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "Depicts the hardships and suffering endured by the Joads as they journey from Oklahoma to California during the Depression."
+  },
+  {
+    "isbn": "0805210555",
+    "title": "The Complete Stories",
+    "author": "Franz Kafka",
+    "url": "http://books.google.com/books/content?id=ATl4i59stCMC&printsec=frontcover&img=1&zoom=1&source=gbs_api&zoom=20",
+    "description": "Collects the entire body of Kafka's short stories and parables, reflecting his concern for modern man's search for identity, place, and purpose"
+  },
+  {
+    "isbn": "MINN:31951002066319Y",
+    "title": "The Iliad and Odyssey of Homer: The Iliad; v. 3-4, The Odyssey",
+    "author": "Homer",
+    "url": "http://books.google.com/books/content?id=xFsPAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20"
+  },
+  {
+    "isbn": "MINN:31951002066319Y",
+    "title": "The Iliad and Odyssey of Homer: The Iliad; v. 3-4, The Odyssey",
+    "author": "Homer",
+    "url": "http://books.google.com/books/content?id=xFsPAQAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20"
+  },
+  {
+    "isbn": "HARVARD:HN4Q7F",
+    "title": "The History and Adventures of the Renowned Don Quixote",
+    "author": "Miguel de Cervantes Saavedra",
+    "url": "http://books.google.com/books/content?id=LdoOAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20"
+  },
+  {
+    "isbn": "4871876357",
+    "title": "Invisible Man",
+    "author": "Ralph Ellison",
+    "url": "http://books.google.com/books/content?id=hQk0jgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&zoom=20",
+    "description": "This famous work, Invisible Man by Ralph Ellison, has come back in the forefront of the news because of a speech given by Michelle Obama, wife of President Barack Obama, on May 9, 2015 at Tuskegee University. Here is what she said: \"And all of that is going to be a heavy burden to carry. It can feel isolating. It can make you feel like your life somehow doesn't matter -- that you're like the Invisible Man that Tuskegee grad Ralph Ellison wrote about all those years ago. And as we've seen over the past few years, those feelings are real. They're rooted in decades of structural challenges that have made too many folks feel frustrated and invisible. And those feelings are playing out in communities like Baltimore and Ferguson and so many others across this country.\""
+  },
+  {
+    "isbn": "PSU:000018863116",
+    "title": "Adventures of Huckleberry Finn",
+    "subtitle": "(Tom Sawyer's Comrade)",
+    "author": "Mark Twain",
+    "url": "http://books.google.com/books/content?id=zuvXAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20"
+  },
+  {
+    "isbn": "0679437223",
+    "title": "Catch-22",
+    "author": "Joseph Heller",
+    "url": "http://books.google.com/books/content?id=9VF5ngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&zoom=20",
+    "description": "Depicts the struggles of a U.S. airman attempting to survive the lunacy and depravity of a World War II base."
+  },
+  {
+    "isbn": "9780194786331",
+    "title": "David Copperfield Level 5 Oxford Bookworms Library",
+    "author": "Charles Dickens",
+    "url": "http://books.google.com/books/content?id=EBZoBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "A level 5 Oxford Bookworms Library graded reader. Retold for Learners of English by Clare West. 'Please, Mr Murdstone! Don't beat me! I've tried to learn my lessons, really I have, sir!' sobs David. Although he is only eight years old, Mr Murdstone does beat him, and David is so frightened that he bites his cruel stepfather's hand. For that, he is kept locked in his room for five days and nights, and nobody is allowed to speak to him. As David grows up, he learns that life is full of trouble and misery and cruelty. But he also finds laughter and kindness, trust and friendship . . . and love."
+  },
+  {
+    "isbn": "9780553898095",
+    "title": "Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "url": "http://books.google.com/books/content?id=BZvXZ1au0VcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "In 1880 Dostoevsky completed The Brothers Karamazov, the literary effort for which he had been preparing all his life. Compelling, profound, complex, it is the story of a patricide and of the four sons who each had a motive for murder: Dmitry, the sensualist, Ivan, the intellectual; Alyosha, the mystic; and twisted, cunning Smerdyakov, the bastard child. Frequently lurid, nightmarish, always brilliant, the novel plunges the reader into a sordid love triangle, a pathological obsession, and a gripping courtroom drama. But throughout the whole, Dostoevsky searhes for the truth--about man, about life, about the existence of God. A terrifying answer to man's eternal questions, this monumental work remains the crowning achievement of perhaps the finest novelist of all time. From the Paperback edition."
+  },
+  {
+    "isbn": "9781551117232",
+    "title": "Mrs. Dalloway - Broadview Edition",
+    "author": "Virginia Woolf",
+    "url": "http://books.google.com/books/content?id=RkcJa8oaEosC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
+    "description": "Mrs. Dalloway takes place on one day in the middle of June 1923. Its plot is seemingly thin: a middle-aged society hostess is having a party; she hopes the Prime Minister will attend; she reconnects with old friends from her youth. From these slimmest of premises a whole world unfolds. Of all of Virginia Woolf’s novels, it is Mrs. Dalloway that appears to speak most intimately to our own time. Selected contemporary reviews, both positive and negative, are included in the appendices of this edition, as are materials on the literary, political, medical, and educational contexts of the novel."
+  },
+]
+
+}
+
+

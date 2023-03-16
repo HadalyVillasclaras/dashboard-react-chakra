@@ -1,0 +1,4 @@
+/books GET
+/books/{id} GET
+/books POST
+/books/{id} DELETE

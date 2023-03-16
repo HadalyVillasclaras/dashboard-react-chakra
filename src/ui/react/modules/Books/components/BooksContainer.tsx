@@ -16,7 +16,10 @@ export const BooksContainer = () => {
   async function getBooks() {
     await getBooksService()
       .then((res) => {
-        setBooks(res);
+       return res.json()
+      })
+      .then(data => {
+        setBooks(data)
         setIsLoading(false)
       })
       .catch((err) => {
