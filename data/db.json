@@ -1,7 +1,7 @@
 {
   "books": [
   {
-    "id": 2,
+    "id": 0,
     "author": "Hans Christian Andersen",
     "country": "Denmark",
     "language": "Danish",
@@ -11,6 +11,7 @@
     "year": 1836
   },
   {
+    "id": 1,
     "author": "Dante Alighieri",
     "country": "Italy",
     "language": "Italian",
@@ -61,6 +62,7 @@
     "year": 1351
   },
   {
+    "id": 6,
     "author": "Jorge Luis Borges",
     "country": "Argentina",
     "imageLink": "images/ficciones.jpg",
@@ -71,6 +73,7 @@
     "year": 1965
   },
   {
+    "id": 7,
     "author": "Albert Camus",
     "country": "Algeria, French Empire",
     "language": "French",
@@ -80,6 +83,7 @@
     "year": 1942
   },
   {
+    "id": 8,
     "author": "Paul Celan",
     "country": "Romania, France",
     "language": "German",
@@ -89,6 +93,7 @@
     "year": 1952
   },
   {
+    "id": 8,
     "author": "Louis-Ferdinand C\u00e9line",
     "country": "France",
     "language": "French",
@@ -98,6 +103,7 @@
     "year": 1932
   },
   {
+    "id": 9,
     "author": "Geoffrey Chaucer",
     "country": "England",
     "language": "English",
@@ -107,6 +113,7 @@
     "year": 1450
   },
   {
+    "id": 10,
     "author": "Anton Chekhov",
     "country": "Russia",
     "language": "Russian",
@@ -116,6 +123,7 @@
     "year": 1886
   },
   {
+    "id": 11,
     "author": "Joseph Conrad",
     "country": "United Kingdom",
     "language": "English",
@@ -125,6 +133,7 @@
     "year": 1904
   },
   {
+    "id": 12,
     "author": "Denis Diderot",
     "country": "France",
     "imageLink": "images/jacques-the-fatalist.jpg",
@@ -135,6 +144,7 @@
     "year": 1796
   },
   {
+    "id": 13,
     "author": "Alfred D\u00f6blin",
     "country": "Germany",
     "language": "German",
@@ -144,6 +154,7 @@
     "year": 1929
   },
   {
+    "id": 14,
     "author": "Fyodor Dostoevsky",
     "country": "Russia",
     "language": "Russian",
@@ -153,6 +164,7 @@
     "year": 1866
   },
   {
+    "id": 15,
     "author": "Fyodor Dostoevsky",
     "country": "Russia",
     "language": "Russian",
@@ -1195,9 +1207,8 @@
     "author": "Virginia Woolf",
     "url": "http://books.google.com/books/content?id=RkcJa8oaEosC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&zoom=20",
     "description": "Mrs. Dalloway takes place on one day in the middle of June 1923. Its plot is seemingly thin: a middle-aged society hostess is having a party; she hopes the Prime Minister will attend; she reconnects with old friends from her youth. From these slimmest of premises a whole world unfolds. Of all of Virginia Woolf’s novels, it is Mrs. Dalloway that appears to speak most intimately to our own time. Selected contemporary reviews, both positive and negative, are included in the appendices of this edition, as are materials on the literary, political, medical, and educational contexts of the novel."
-  },
+  }
 ]
-
 }
 
 

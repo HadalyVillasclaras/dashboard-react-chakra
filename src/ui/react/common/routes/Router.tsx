@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { AddBookPage } from '../../modules/Books/pages/AddBookPage'
+import { BookDetailPage } from '../../modules/Books/pages/BookDetailPage'
 import { BooksPage } from '../../modules/Books/pages/BooksPage'
 import { HomePage } from '../../modules/Home/pages/HomePage'
 import { DashboardLayout } from '../layouts/DashboardLayout'
@@ -29,6 +30,10 @@ export const Router = () => {
             {
               index: true,
               element: <BooksPage title="Books" />,
+            },
+            {
+              path: "book/:id",
+              element: <BookDetailPage />,
             },
             {
               path: "add",

@@ -67,7 +67,7 @@ export const BooksList = ({books}: Props) => {
                             <DeleteIcon />
                           </Button>
                           <Button size="xs" variant="icon-button">
-                            <Link to='#'>
+                            <Link to={`book/${book.id}`}>
                               <ViewIcon />
                             </Link>
                           </Button>

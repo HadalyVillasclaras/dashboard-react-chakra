@@ -2,3 +2,6 @@
 /books/{id} GET
 /books POST
 /books/{id} DELETE
+
+Levantar el server de la db. 
+npx json-server -p 3500 -w data/db.json

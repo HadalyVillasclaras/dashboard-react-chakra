@@ -1,4 +1,3 @@
-
 import { AddIcon } from "@chakra-ui/icons";
 import { Button, Divider, Flex, Spinner } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
@@ -11,11 +10,16 @@ import { getBooks as getBooksService } from "../../../../../modules/books/servic
 export const BooksContainer = () => {
   const [books, setBooks] = useState<Book[]>([]);
   const [isLoading, setIsLoading] = useState<Boolean>(true);
+  const [error, setError] = useState();
 
 
   async function getBooks() {
+
     await getBooksService()
       .then((res) => {
+        if(!res.ok){
+          throw Error('Could not fetch the data for that resource')
+        }
        return res.json()
       })
       .then(data => {
@@ -24,12 +28,15 @@ export const BooksContainer = () => {
       })
       .catch((err) => {
         console.log(err);
+        setError(err.message);
+
       })
       
   }
 
   useEffect(() => {
     getBooks();
+
   }, [])
   
 
@@ -56,9 +63,7 @@ export const BooksContainer = () => {
         </Link>
       </Flex>
       <Divider m="1rem 0"/>
-      <BooksList 
-        books={books}
-      />
+      <BooksList books={books}/>
     </Section>
     )}
     <Divider m="2rem 0" />
