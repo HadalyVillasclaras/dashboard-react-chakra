@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Book } from '../../../../../modules/books/models/book.model';
 import { getBookById as getBookByIdService} from '../../../../../modules/books/services/getBookById';
+import { Section } from '../../../common/components/Section';
 
 export const BookDetails = () => {
   const {id} = useParams();
@@ -39,7 +40,15 @@ export const BookDetails = () => {
   
   return (
     <>
-    <div>BookDetails - {id}</div>
+    <Section>
+      <div>Id - {book?.id}</div>
+      <div>Title - {book?.title}</div>
+      <div>Author - {book?.author}</div>
+      <div>Year - {book?.year}</div>
+      <div>Pages - {book?.pages}</div>
+
+
+    </Section>
     
     </>
   )
