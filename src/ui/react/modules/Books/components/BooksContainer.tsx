@@ -12,9 +12,8 @@ export const BooksContainer = () => {
   const [isLoading, setIsLoading] = useState<Boolean>(true);
   const [error, setError] = useState();
 
-
+  
   async function getBooks() {
-
     await getBooksService()
       .then((res) => {
         if(!res.ok){
@@ -29,9 +28,7 @@ export const BooksContainer = () => {
       .catch((err) => {
         console.log(err);
         setError(err.message);
-
       })
-      
   }
 
   useEffect(() => {

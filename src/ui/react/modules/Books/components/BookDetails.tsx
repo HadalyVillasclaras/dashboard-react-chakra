@@ -1,7 +1,8 @@
 import { Text } from '@chakra-ui/react';
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Book } from '../../../../../modules/books/models/book.model';
+import { deleteBook } from '../../../../../modules/books/services/deleteBook';
 import { getBookById as getBookByIdService} from '../../../../../modules/books/services/getBookById';
 import { Section } from '../../../common/components/Section';
 
@@ -34,6 +35,26 @@ export const BookDetails = () => {
     console.log('cleanup');
   }, [])
   
+  function handleDelete() {
+    deleteBook(book?.id)
+      .then((res) => {
+        if(!res.ok){
+          throw Error('Could not fetch the data for that resource')
+        }
+        console.log('deleted');
+       return res.json()
+      })
+      .then(data => {
+      })
+      .catch((err) => {
+        console.log(err);
+
+      })
+  }
+
+  
+
+
   return (
     <>
     { 
@@ -48,9 +69,8 @@ export const BookDetails = () => {
       </Section>
       : 
       <Text>Error on fetching book with id: {id}</Text>
-    
-    
     } 
+    <button onClick={handleDelete}>delete</button>
     </>
   )
 }

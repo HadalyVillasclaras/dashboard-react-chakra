@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import { Book } from '../../../../../modules/books/models/book.model';
 import { addBook as addBookService} from '../../../../../modules/books/services/addBook';
+import { useNavigate } from "react-router-dom";
 
 export const BookForm = () => {
   const [book, setBook] = useState<Book>();
   const [isPending, setIsPending] = useState(false)
+  let navigate = useNavigate();
 
   function handleSubmit(e: any) {
     e.preventDefault();
@@ -23,7 +25,6 @@ export const BookForm = () => {
     //   language: formJson.language
     // })
     addBook(formJson)
-    
   }
 
   async function addBook(formJson: any) {
@@ -38,6 +39,7 @@ export const BookForm = () => {
       .then(data => {
         setBook(data)
         setIsPending(false);
+        navigate(-1)
 
       })
       .catch((err) => {
@@ -86,7 +88,7 @@ export const BookForm = () => {
         <br/><br/>
         <button type="reset">Reset form</button><br/>
 
-          <button type="submit" disabled={isPending ? true : false}>Submit form</button>
+           <button type="submit">Submit form</button> 
         
       </form>
     
