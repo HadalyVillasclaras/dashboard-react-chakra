@@ -1,3 +1,4 @@
+import { Text } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Book } from '../../../../../modules/books/models/book.model';
@@ -10,9 +11,7 @@ export const BookDetails = () => {
   const [isLoading, setIsLoading] = useState<Boolean>(true);
   const [error, setError] = useState();
 
-
   async function getBook() {
-
     await getBookByIdService(id)
       .then((res) => {
         if(!res.ok){
@@ -25,13 +24,10 @@ export const BookDetails = () => {
         setIsLoading(false)
       })
       .catch((err) => {
+        setError(err);
         console.log(err);
-        setError(err.message);
-
       })
-      
   }
-
   useEffect(() => {
     getBook();
 
@@ -40,16 +36,21 @@ export const BookDetails = () => {
   
   return (
     <>
-    <Section>
-      <div>Id - {book?.id}</div>
-      <div>Title - {book?.title}</div>
-      <div>Author - {book?.author}</div>
-      <div>Year - {book?.year}</div>
-      <div>Pages - {book?.pages}</div>
-
-
-    </Section>
+    { 
+      error === undefined 
+      ? 
+      <Section>
+        <div>Id - {book?.id}</div>
+        <div>Title - {book?.title}</div>
+        <div>Author - {book?.author}</div>
+        <div>Year - {book?.year}</div>
+        <div>Pages - {book?.pages}</div>
+      </Section>
+      : 
+      <Text>Error on fetching book with id: {id}</Text>
     
+    
+    } 
     </>
   )
 }
