@@ -9,6 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { Breadcrumbs } from "./breadcrumbs/Breadcrumbs";
+import { ColorMode } from "./colorMode/ColorMode";
 
 export const Header = () => {
   return (
@@ -34,6 +35,7 @@ export const Header = () => {
             <QuestionIcon/>
           </ListItem>
           <ListItem>
+            <ColorMode/>
           </ListItem>
           <ListItem>
             Logut

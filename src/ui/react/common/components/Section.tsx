@@ -6,12 +6,13 @@ interface Props {
 }
 
 export const Section = ({ children }: Props) => {
-  const background = useColorModeValue("white", "gray.700");
+  const bgColor = useColorModeValue("white", "gray.700");
+
 
   return (
     <Box
       as="section"
-      backgroundColor="gray.700"
+      backgroundColor={bgColor}
       p="2rem"
       borderRadius="1rem"
       mb="2rem"
