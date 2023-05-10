@@ -13,7 +13,7 @@ export const Router = () => {
     {
       path: "/",
       element: <DashboardLayout />,
-      // errorElement: <NotFoundPage />,
+      errorElement: <NotFoundPage />,
       children: [
         {
           path: "dashboard",
@@ -30,15 +30,21 @@ export const Router = () => {
           children: [
             {
               index: true,
-              element: <BooksPage title="Books" />,
+              element: <BooksPage/>,
             },
             {
-              path: "book/:id",
+              path: "view/:id",
               element: <BookDetailPage />,
+              handle: {
+                crumb: () => 'Detail'
+              },
             },
             {
               path: "add",
-              element: <AddBookPage title="Add" />,
+              element: <AddBookPage />,
+              handle: {
+                crumb: () => 'Add'
+              },
             },
           ]
         },
@@ -50,7 +56,7 @@ export const Router = () => {
           children: [
             {
               index: true,
-              element: <TasksPage title="Tasks" />
+              element: <TasksPage/>
             }
           ]
         }

@@ -1,10 +1,10 @@
 import { Subheader } from "../../../common/components/modules/subheader/Subheader"
 import { TaskContainer } from "../components/TaskContainer"
 
-export const TasksPage = ({title}: any) => {
+export const TasksPage = () => {
   return (
     <>
-        <Subheader title={title}/>
+        <Subheader title={'title'}/>
         <TaskContainer/>
     </>
   )

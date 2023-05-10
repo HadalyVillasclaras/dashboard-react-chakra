@@ -43,7 +43,7 @@ export const SideBar = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [animation, setAnimation] = useState(false);
 
-  const buttonCss: InterpolationWithTheme<any> = {
+  const buttonCss: any = {
     animation: isOpen
       ? `${forwardAnimation} 0.2s linear forwards`
       : `${reverseAnimation} 0.2s linear forwards`,

@@ -4,38 +4,21 @@ import { Link } from "react-router-dom";
 import { Section } from "../../../common/components/Section";
 import { BooksList } from "./BooksList";
 import { useEffect, useState } from "react";
-import { Book } from "../../../../../modules/books/models/book.model";
-import { getBooks as getBooksService } from "../../../../../modules/books/services/getBooks";
+import { useGetBooks } from "../hooks/useGetBooks";
 
 export const BooksContainer = () => {
-  const [books, setBooks] = useState<Book[]>([]);
-  const [isLoading, setIsLoading] = useState<Boolean>(true);
+  const [books, setBooks] = useState<any>([]);
+  const [isLoading, setIsLoading] = useState<Boolean>(false);
   const [error, setError] = useState();
 
-  
   async function getBooks() {
-    await getBooksService()
-      .then((res) => {
-        if(!res.ok){
-          throw Error('Could not fetch the data for that resource')
-        }
-       return res.json()
-      })
-      .then(data => {
-        setBooks(data)
-        setIsLoading(false)
-      })
-      .catch((err) => {
-        console.log(err);
-        setError(err.message);
-      })
+    const {response} = await useGetBooks();
+    console.log('books');
   }
 
   useEffect(() => {
-    getBooks();
-
+    getBooks()
   }, [])
-  
 
   return (
     <>
@@ -46,7 +29,7 @@ export const BooksContainer = () => {
     {isLoading ? (
       <Section>
       <div style={{ textAlign: "center" }}>
-        <Spinner />
+        {/* <Spinner /> */}
       </div>
     </Section>
     ) : (
@@ -63,7 +46,6 @@ export const BooksContainer = () => {
       <BooksList books={books}/>
     </Section>
     )}
-    <Divider m="2rem 0" />
 
     </>
   );
