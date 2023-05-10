@@ -3,6 +3,7 @@ import { AddBookPage } from '../../modules/Books/pages/AddBookPage'
 import { BookDetailPage } from '../../modules/Books/pages/BookDetailPage'
 import { BooksPage } from '../../modules/Books/pages/BooksPage'
 import { HomePage } from '../../modules/Home/pages/HomePage'
+import { TasksPage } from '../../modules/Tasks/pages/TasksPage'
 import { DashboardLayout } from '../layouts/DashboardLayout'
 import { NotFoundPage } from '../pages/NotFoundPage'
 
@@ -39,6 +40,18 @@ export const Router = () => {
               path: "add",
               element: <AddBookPage title="Add" />,
             },
+          ]
+        },
+        {
+          path: "tasks",
+          handle: {
+            crumb: () => 'Tasks'
+          },
+          children: [
+            {
+              index: true,
+              element: <TasksPage title="Tasks" />
+            }
           ]
         }
       ]

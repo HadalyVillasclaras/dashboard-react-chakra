@@ -19,7 +19,6 @@ import "./sidebar.css";
 const navItems: Array<any> = [
   { name: "Home", icon: MdOutlineGridView, link: "/" },
   { name: "Tasks", icon: BiTask, link: "/tasks" },
-  { name: "Common", icon: FiHeart, link: "/" },
   { name: "Books", icon: FiHeart, link: "/books" },
 ];
 

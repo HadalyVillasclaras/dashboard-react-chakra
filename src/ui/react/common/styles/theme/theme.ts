@@ -4,7 +4,7 @@ import {fonts, fontSizes, colors} from './foundations';
 import { semanticTokens } from "./semanticTokens";
 import {config} from "./config"
 import { mode } from '@chakra-ui/theme-tools';
-import { Table} from "./components/table/table";
+import { Table, TableContainer} from "./components/table/table";
 
 
 const styles = {
@@ -61,6 +61,7 @@ export const theme = extendTheme({
   components: {
     Button,
     Text,
-    Table
+    Table,
+    TableContainer
   }
 })

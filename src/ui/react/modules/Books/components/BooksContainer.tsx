@@ -40,7 +40,7 @@ export const BooksContainer = () => {
   return (
     <>
     <Section>
-      <h4>Filters:</h4>
+      <h4>Search:</h4>
       <Divider m="1rem 0"/>
     </Section>
     {isLoading ? (

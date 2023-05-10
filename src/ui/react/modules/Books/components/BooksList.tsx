@@ -22,10 +22,9 @@ export const BooksList = ({books}: Props) => {
   return (
     <>
       <Box>
-        <TableContainer
-          whiteSpace="normal"
-          borderRadius="0.7rem"
-          border="solid 1px #E2E8F0"
+        <TableContainer 
+    //           borderRadius: '2rem',
+    // border:"solid 1px #E2E8F0"
         >
           <Table variant="simple">
             <Thead>

@@ -3,7 +3,7 @@ import { defineStyleConfig } from "@chakra-ui/react";
 export const Table = defineStyleConfig({
     baseStyle: {
         table: {
-            borderRadius: '1.5rem',
+            borderRadius: '0rem',
         },
         th: {
             fontSize: '2px',
@@ -45,4 +45,29 @@ export const Table = defineStyleConfig({
         variant: 'simple',
         size:"sm"
       }
+})
+
+
+export const TableContainer = defineStyleConfig({
+  baseStyle: {
+    borderRadius: '2rem',
+    border:"solid 1px #E2E8F0"
+
+  },
+  variants: {
+    simple: {
+      borderRadius: '2rem',
+      border:"solid 1px #E2E8F0"
+
+    },
+    solid: {
+      borderRadius: '2rem',
+    border:"solid 1px #E2E8F0"
+
+    },
+  },
+  defaultProps: {
+    variant: 'solid',
+  }
+
 })
