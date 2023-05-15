@@ -5,7 +5,6 @@ import "./breadcrumbs.css";
 export const Breadcrumbs = () => {
   let matches = useMatches();
 
-  console.log(matches);
   let crumbs = matches
     .filter((match: any) => Boolean(match.handle?.crumb)) //elimina los que no tienen handle/crumb
     .map((match: any) => {
@@ -13,7 +12,7 @@ export const Breadcrumbs = () => {
       return (
         match.handle.crumb()
       )
-    }); //
+    });
 
 
   return (

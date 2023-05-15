@@ -5,21 +5,27 @@ import { Section } from "../../../common/components/Section";
 import { BooksList } from "./BooksList";
 import { useEffect, useState } from "react";
 import { useGetBooks } from "../hooks/useGetBooks";
+import { getPaginationData } from "../../../../../core/core/getPaginationData";
 
 export const BooksContainer = () => {
   const [books, setBooks] = useState<any>([]);
   const [isLoading, setIsLoading] = useState<Boolean>(false);
   const [error, setError] = useState();
-
+  let paginationData;
+  
   async function getBooks() {
-    const {response} = await useGetBooks();
-    console.log('books');
+    const books = await useGetBooks();
+    paginationData = getPaginationData(books)
+    
+
+    books &&
+    setBooks(books)
   }
 
   useEffect(() => {
-    getBooks()
+    getBooks();
   }, [])
-
+console.log(books);
   return (
     <>
     <Section>

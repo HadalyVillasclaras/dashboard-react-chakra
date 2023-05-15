@@ -1,15 +1,17 @@
 import { getBooks } from "../../../../../core/books/services/getBooks";
+import { getPaginationData } from "../../../../../core/core/getPaginationData";
 
 export const useGetBooks = async() => {
-  const response: any = {};
-
-  await getBooks() 
-    .then((response) => {
-      response.json();
+  let response: any = {};
+  
+  await getBooks()
+    .then((resp) => {
+      response.books = resp.data.json();
     })
     .catch((err) => {
       console.log(err);
     });
 
-  return response;
+
+  return response.books;
 }

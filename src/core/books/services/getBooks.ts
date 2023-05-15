@@ -1,7 +1,8 @@
 export const getBooks = async() => {
+  const url = import.meta.env.VITE_API_BASEURL + 'books';
 
-  const API_URL = 'http://localhost:3500/books';
+  let response:any = {};
 
-  const response = await fetch(API_URL);
+  response.data = await fetch(url);
   return response
 }

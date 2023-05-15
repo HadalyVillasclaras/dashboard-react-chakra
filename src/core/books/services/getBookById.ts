@@ -1,8 +1,6 @@
-import React from 'react'
 
 export const getBookById = async(id: any) => {
-
-  const url = `http://localhost:3500/books/${id}`;
+  const url = `${import.meta.env.VITE_API_BASEURL}/books/${id}`;
 
   const response = await fetch(url);
 
