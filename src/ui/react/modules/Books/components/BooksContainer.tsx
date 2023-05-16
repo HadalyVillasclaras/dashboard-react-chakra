@@ -16,7 +16,6 @@ export const BooksContainer = () => {
   async function getBooks() {
     const books = await useGetBooks();
     paginationData = getPaginationData(books)
-    
 
     books &&
     setBooks(books)
@@ -25,34 +24,33 @@ export const BooksContainer = () => {
   useEffect(() => {
     getBooks();
   }, [])
-console.log(books);
+
   return (
     <>
-    <Section>
-      <h4>Search:</h4>
-      <Divider m="1rem 0"/>
-    </Section>
-    {isLoading ? (
       <Section>
-      <div style={{ textAlign: "center" }}>
-        {/* <Spinner /> */}
-      </div>
-    </Section>
-    ) : (
-    <Section>
-      <Flex justifyContent="space-between" mb="1rem">
-        <h4>List:</h4>
-        <Link to="/books/add">
-          <Button>
-            <AddIcon />
-          </Button>
-        </Link>
-      </Flex>
-      <Divider m="1rem 0"/>
-      <BooksList books={books}/>
-    </Section>
-    )}
-
+        <h4>Search:</h4>
+        <Divider m="1rem 0"/>
+      </Section>
+      {isLoading ? (
+        <Section>
+        <div style={{ textAlign: "center" }}>
+          {/* <Spinner /> */}
+        </div>
+      </Section>
+      ) : (
+      <Section>
+        <Flex justifyContent="space-between" mb="1rem">
+          <h4>List:</h4>
+          <Link to="/books/add">
+            <Button>
+              <AddIcon />
+            </Button>
+          </Link>
+        </Flex>
+        <Divider m="1rem 0"/>
+        <BooksList books={books}/>
+      </Section>
+      )}
     </>
   );
 };
