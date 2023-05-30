@@ -33,14 +33,14 @@ export const Router = () => {
               element: <BooksPage/>,
             },
             {
-              path: "view/:id",
+              path: ":id",
               element: <BookDetailPage />,
               handle: {
                 crumb: () => 'Detail'
               },
             },
             {
-              path: "add",
+              path: "books/add",
               element: <AddBookPage />,
               handle: {
                 crumb: () => 'Add'

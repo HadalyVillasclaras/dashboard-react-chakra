@@ -6,7 +6,7 @@ export const useGetBooks = async() => {
   
   await getBooks()
     .then((resp) => {
-      response.books = resp.data.json();
+      response.books = resp.json();
     })
     .catch((err) => {
       console.log(err);

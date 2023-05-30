@@ -1,10 +1,10 @@
-export const getPaginationData = (data:any) => {
+export const getPaginationData = (data:any, limit:number = 10) => {
 
   let paginationData = {
-    limit: 10,
-    totalData: 0,
+    limit: limit,
+    totalData: data.length,
     currentPage: 1,
-    pages: 0
+    pages: Math.ceil(data.length / limit)
   }
 
   if(data) {
