@@ -51,7 +51,7 @@ export const Router = () => {
               path: "edit/:id",
               element: <BooksUpdatePage />,
               handle: {
-                crumb: () => 'Add'
+                crumb: () => 'Edit'
               },
             },
           ]

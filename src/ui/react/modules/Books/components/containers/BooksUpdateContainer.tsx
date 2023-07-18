@@ -1,10 +1,41 @@
 import React from 'react'
+import { BooksUpdateCreateForm } from '../BooksUpdateCreateForm'
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import { CenteredSpinner } from '../../../../common/components/loaders/CenteredSpinner';
+import { Section } from '../../../../common/components/Section';
+import { useGetBookById } from '../../hooks/useGetBookById';
 
-type Props = {}
+export const BooksUpdateContainer = () => {
+  const { id } = useParams();
+  const [book, setBook] = useState<any>();
+  const [isSaveButtonDisabled, setIsSaveButtonDisabled] = useState(false);
+  const [isLoading, setIsLoading] = useState<Boolean>(true);
 
-export const BooksUpdateContainer = (props: Props) => {
-  
+  async function getCurrentBook() {
+    setIsLoading(true);
+    const { book }: any = await useGetBookById(id);
+
+    book &&
+      setBook(book);
+    setIsLoading(false);
+  }
+
+  useEffect(() => {
+    getCurrentBook();
+  }, [])
+
   return (
-    <div>BooksUpdateContainer</div>
+    <Section>
+      {
+        !isLoading
+          ? <BooksUpdateCreateForm
+            isEdit={true}
+            currentBook={book}
+            setIsSaveButtonDisabled={setIsSaveButtonDisabled}
+          />
+          : <CenteredSpinner />
+      }
+    </Section>
   )
 }
