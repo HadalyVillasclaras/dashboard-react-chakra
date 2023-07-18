@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import { useNavigate } from "react-router-dom";
 
-export const BookForm = () => {
+export const BooksUpdateCreateForm = () => {
   const [book, setBook] = useState<any>();
   const [isPending, setIsPending] = useState(false)
   let navigate = useNavigate();
@@ -13,43 +13,43 @@ export const BookForm = () => {
 
       <form method='post' >
         <label htmlFor="">Title</label>
-        <input 
+        <input
           name='title'
-          type="text" 
-        /> <br/>
+          type="text"
+        /> <br />
         <label htmlFor="">Author</label>
-        <input 
+        <input
           name='author'
-          type="text" 
-        /><br/>
+          type="text"
+        /><br />
         <label htmlFor="">Year</label>
-        <input 
+        <input
           name='year'
-          type="number" 
-        /><br/>
+          type="number"
+        /><br />
         <label htmlFor="">No. of pages</label>
-        <input 
+        <input
           name='pages'
-          type="number" 
-        /><br/>
+          type="number"
+        /><br />
         <label htmlFor="">Country</label>
-        <input 
+        <input
           name='country'
-          type="text" 
-        /><br/>
+          type="text"
+        /><br />
         <label htmlFor="">Language</label>
-        <input 
+        <input
           name='language'
-          type="text" 
-        /><br/>
-        <br/><br/>
-        <button type="reset">Reset form</button><br/>
+          type="text"
+        /><br />
+        <br /><br />
+        <button type="reset">Reset form</button><br />
 
-           <button type="submit">Submit form</button> 
-        
+        <button type="submit">Submit form</button>
+
       </form>
-    
-    
+
+
     </>
   )
 }

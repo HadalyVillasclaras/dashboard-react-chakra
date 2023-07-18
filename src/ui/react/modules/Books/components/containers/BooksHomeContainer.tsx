@@ -1,11 +1,11 @@
 import { AddIcon } from "@chakra-ui/icons";
 import { Button, Divider, Flex, Spinner } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { Section } from "../../../common/components/Section";
-import { BooksTable } from "./BooksTable";
+import { Section } from "../../../../common/components/Section";
+import { BooksTable } from "../BooksTable";
 import { useEffect, useState } from "react";
-import { useGetBooks } from "../hooks/useGetBooks";
-import { getPaginationData } from "../../../../../core/core/getPaginationData";
+import { useGetBooks } from "../../hooks/useGetBooks";
+import { getPaginationData } from "../../../../../../core/core/getPaginationData";
 
 export const BooksHomeContainer = () => {
   const [books, setBooks] = useState<any>([]);

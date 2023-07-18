@@ -1,8 +1,9 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { BookAddPage } from '../../modules/Books/pages/BookAddPage'
-import { BookDetailPage } from '../../modules/Books/pages/BookDetailPage'
-import { BookEditPage } from '../../modules/Books/pages/BookEditPage'
+import { BooksCreatePage } from '../../modules/Books/pages/BooksCreatePage'
+import { BooksDetailPage } from '../../modules/Books/pages/BooksDetailPage'
+
 import { BooksHomePage } from '../../modules/Books/pages/BooksHomePage'
+import { BooksUpdatePage } from '../../modules/Books/pages/BooksUpdatePage'
 import { HomePage } from '../../modules/Home/pages/HomePage'
 import { TasksPage } from '../../modules/Tasks/pages/TasksPage'
 import { DashboardLayout } from '../layouts/DashboardLayout'
@@ -34,21 +35,21 @@ export const Router = () => {
             },
             {
               path: "detail/:id",
-              element: <BookDetailPage />,
+              element: <BooksDetailPage />,
               handle: {
                 crumb: () => 'Detail'
               },
             },
             {
               path: "add",
-              element: <BookAddPage />,
+              element: <BooksCreatePage />,
               handle: {
                 crumb: () => 'Add'
               },
             },
             {
               path: "edit/:id",
-              element: <BookEditPage />,
+              element: <BooksUpdatePage />,
               handle: {
                 crumb: () => 'Add'
               },
