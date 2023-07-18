@@ -1,12 +1,13 @@
+import { getBookById } from "../../../../../core/books/services/getBookById";
 import { getBooks } from "../../../../../core/books/services/getBooks";
 import { getPaginationData } from "../../../../../core/core/getPaginationData";
 
-export const useGetBooks = async () => {
-  let books: any;
+export const useGetBookById = async (bookId: string | undefined) => {
+  let book: any;
   let pagination: any;
-  await getBooks()
+  await getBookById(bookId)
     .then((resp:any) => {
-      books = resp.data;
+      book = resp.data;
       pagination = resp.pagination;
       console.log(resp);
     })
@@ -14,5 +15,5 @@ export const useGetBooks = async () => {
       console.log(err);
     });
 
-  return {books, pagination};
+  return {book, pagination};
 }

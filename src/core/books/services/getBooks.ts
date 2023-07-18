@@ -1,37 +1,27 @@
 import { getPaginationData } from "../../core/getPaginationData";
+import { http } from "../../http";
 
 export const getBooks = async() => {
-  const url = import.meta.env.VITE_API_BASEURL + 'books';
-
   try {
-    const response = await fetch(url);
-
-    // Verifica si la respuesta es exitosa
-    if (!response.ok) {
-      throw new Error("Error al obtener libros");
-    }
-
-    // Convirtiendo la respuesta a JSON
-    const data = await response.json();
+    const url = import.meta.env.VITE_API_BASEURL + 'books';
+    // const jwt =  localStorage.getItem('jwt');
+    const httpRequest = await (new http(url, 'GET').request());
+    const books = httpRequest.data;
+    const pagination = getPaginationData(books);
 
     let apiInterface = {
-      data: data,
-      pagination: [],
-      error: ''
+      data: books,
+      pagination: pagination,
+      status: httpRequest.status
     }
-  
     
-    // apiInterface.pagination = getPaginationData(data);
-
-    console.log(apiInterface);
     return apiInterface;
-
-  } catch (error) {
-    console.error("Ha ocurrido un error: ", error);
-    return {
-      data: [],
-      pagination: [],
-      error: error.message
+  } catch (error: any) {
+    console.error(error.response);
+    let apiError ={
+      status: error.response.status,
+      statusText: error.response.statusText
     }
+    return apiError;
   }
 }

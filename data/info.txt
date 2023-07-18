@@ -1,0 +1,79 @@
+
+/books GET
+/books/{id} GET
+/books POST
+/books/{id} DELETE
+
+Levantar el server de la db. 
+npx json-server -p 3500 -w data/db.json
+
+para q se levante autom.
+//package.json
+"scripts": {
+    ...
+    "start": "json-server --watch db.json --port $PORT"
+    ...
+  },
+
+Búsqueda del texto ‘lo’ en cualquier parte del json.
+http://localhost:3000/books/?q=lo
+
+Búsqueda de tiendas en las calles que contengan la palabra ‘Cruz’ usando el campo de búsqueda seguido del operador _like.
+http://localhost:3000/shop?address_like=Cruz
+
+Tenemos también las opciones _sort para ordenar por un valor y _order para indicar si queremos que se haga de forma ascendente o descendente. Por ejemplo, obtenemos el listado de tiendas ordenadas de forma descendente por tipo.
+http://localhost:3000/api/shop?_sort=type&_order=desc
+
+https://sigdeletras.com/2020/crear-una-fake-reat-api-con-json-server-copy/
+
+Rutas personalizadas
+
+
+-------------------
+
+vite react
+chakra
+react-router-dom
+react-icons
+
+
+Buena estructura de carpetas. basandome en arquitecura hexagonal para evitar acoplamiento con el al 
+framework de UI
+
+independencia de UI, framework, servicios, api rest
+mantenerlo alejado de la logica de dominio
+
+
+UI (views), BD (datos) (drivers)
+  Controllers, presenters, view models, Repositorios, gateways - (adaptadores de interfaz)
+    Use cases (Aplicattion, reglas de negocio) - Domain
+      Entidades (reglas de negocio) -Domain
+
+
+Dividmos en:
+1-Core 
+
+2- frameworks que podemos usar
+  React 
+  cualquier otro framework
+
+  El codigo que se reutiliza es el que no esta acoplado al UI
+
+  -----
+
+  En la capa de DOMINIO se encuentra la lógica de negocio(empresarial y de app)
+  En la capa de DATOS nos comunicamos con la PERSISTENCIA (base de datos o servidor web)
+  En la LOGICA DE PRESENTACIÓN se decide qué datos se muestran (datos, errores) 
+    aqui se gestiona el ESTADO de los components
+
+  Core
+    presentacion (eventos states)
+    domain (casos de uso, entidad)
+    data (repository, API)
+  
+  UI
+    React
+    View 
+    etc 
+
+    

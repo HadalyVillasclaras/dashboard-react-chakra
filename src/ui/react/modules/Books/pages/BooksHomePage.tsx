@@ -1,11 +1,11 @@
 import { Subheader } from "../../../common/components/modules/subheader/Subheader";
-import { BooksContainer } from "../components/BooksContainer";
+import { BooksHomeContainer } from "../components/BooksHomeContainer";
 
-export const BooksPage = () => {
+export const BooksHomePage = () => {
   return (
     <>
       <Subheader title='B' />
-      <BooksContainer />
+      <BooksHomeContainer />
     </>
   );
 };

@@ -1,14 +1,14 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { AddBookPage } from '../../modules/Books/pages/AddBookPage'
+import { BookAddPage } from '../../modules/Books/pages/BookAddPage'
 import { BookDetailPage } from '../../modules/Books/pages/BookDetailPage'
-import { BooksPage } from '../../modules/Books/pages/BooksPage'
+import { BookEditPage } from '../../modules/Books/pages/BookEditPage'
+import { BooksHomePage } from '../../modules/Books/pages/BooksHomePage'
 import { HomePage } from '../../modules/Home/pages/HomePage'
 import { TasksPage } from '../../modules/Tasks/pages/TasksPage'
 import { DashboardLayout } from '../layouts/DashboardLayout'
 import { NotFoundPage } from '../pages/NotFoundPage'
 
 export const Router = () => {
-
   const routes = createBrowserRouter([
     {
       path: "/",
@@ -30,18 +30,25 @@ export const Router = () => {
           children: [
             {
               index: true,
-              element: <BooksPage/>,
+              element: <BooksHomePage />,
             },
             {
-              path: ":id",
+              path: "detail/:id",
               element: <BookDetailPage />,
               handle: {
                 crumb: () => 'Detail'
               },
             },
             {
-              path: "books/add",
-              element: <AddBookPage />,
+              path: "add",
+              element: <BookAddPage />,
+              handle: {
+                crumb: () => 'Add'
+              },
+            },
+            {
+              path: "edit/:id",
+              element: <BookEditPage />,
               handle: {
                 crumb: () => 'Add'
               },
@@ -56,7 +63,7 @@ export const Router = () => {
           children: [
             {
               index: true,
-              element: <TasksPage/>
+              element: <TasksPage />
             }
           ]
         }

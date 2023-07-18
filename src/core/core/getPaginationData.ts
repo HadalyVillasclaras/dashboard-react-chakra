@@ -1,5 +1,4 @@
 export const getPaginationData = (data:any, limit:number = 10) => {
-
   let paginationData = {
     limit: limit,
     totalData: data.length,

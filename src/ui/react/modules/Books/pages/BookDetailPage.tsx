@@ -1,12 +1,11 @@
-import React from 'react'
 import { Subheader } from '../../../common/components/modules/subheader/Subheader'
-import { BookDetails } from '../components/BookDetails'
+import { BookDetailsContainer } from '../components/BookDetailsContainer'
 
 export const BookDetailPage = () => {
   return (
     <>
-    <Subheader title='Book details' />
-    <BookDetails/>
+      <Subheader title='detail page' />
+      <BookDetailsContainer/>
     </>
   )
 }

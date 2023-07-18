@@ -12,20 +12,16 @@ import {
   Tr,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { Book } from "../../../../../modules/books/models/book.model";
+import { Book } from "../../../../../core/books/models/book.model";
 
 interface Props {
   books: Array<Book>
 }
 
-export const BooksList = ({books}: Props) => {
+export const BooksTable = ({ books }: Props) => {
   return (
     <>
-      <Box>
-        <TableContainer 
-    //           borderRadius: '2rem',
-    // border:"solid 1px #E2E8F0"
-        >
+        <TableContainer >
           <Table variant="simple">
             <Thead>
               <Tr>
@@ -48,29 +44,22 @@ export const BooksList = ({books}: Props) => {
                     <Td>{book.language}</Td>
                     <Td>{book.pages}</Td>
                     <Td>x</Td>
-                    <Td>                    
+                    <Td>
                       <ButtonGroup>
-                          <Link to='#'>
-                            <Button
-                              size="xs"
-                              variant="icon-button"
-                              data-testid="admin-element"
-                            >
-                              <EditIcon />
-                            </Button>
-                          </Link>
-                          <Button
-                            size="xs"
-                            variant="icon-button"
-                          >
-                            <DeleteIcon />
-                          </Button>
+                        <Link to='#'>
                           <Button size="xs" variant="icon-button">
-                            <Link to={`book/${book.id}`}>
-                              <ViewIcon />
-                            </Link>
+                            <EditIcon />
                           </Button>
-                    </ButtonGroup>
+                        </Link>
+                        <Button size="xs" variant="icon-button">
+                          <DeleteIcon />
+                        </Button>
+                        <Link to={`detail/${book.id}`}>
+                          <Button size="xs" variant="icon-button">
+                            <ViewIcon />
+                          </Button>
+                        </Link>
+                      </ButtonGroup>
                     </Td>
                   </Tr>
                 );
@@ -78,7 +67,6 @@ export const BooksList = ({books}: Props) => {
             </Tbody>
           </Table>
         </TableContainer>
-      </Box>
     </>
   );
 };
