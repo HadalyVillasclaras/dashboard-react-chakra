@@ -14,6 +14,7 @@ export const BooksUpdateContainer = () => {
 
   async function getCurrentBook() {
     setIsLoading(true);
+    console.log(id);
     const { book }: any = await useGetBookById(id);
 
     book &&

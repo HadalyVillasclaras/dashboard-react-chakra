@@ -8,7 +8,6 @@ export const getBooks = async() => {
     const httpRequest = await (new http(url, 'GET').request());
     const books = httpRequest.data;
     const pagination = getPaginationData(books);
-
     let apiInterface = {
       data: books,
       pagination: pagination,

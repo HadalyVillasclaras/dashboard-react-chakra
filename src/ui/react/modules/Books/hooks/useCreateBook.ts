@@ -1,10 +1,11 @@
+import { Book } from "../../../../../core/books/Entity/Book";
 import { createBook } from "../../../../../core/books/services/createBook";
 import { getBookById } from "../../../../../core/books/services/getBookById";
 import { getBooks } from "../../../../../core/books/services/getBooks";
 import { getPaginationData } from "../../../../../core/core/getPaginationData";
 
-export const useCreateBook = async (formData: any) => {
-  let book: any;
+export const useCreateBook = async (formData: Book) => {
+  let book: Book;
   let pagination: any;
   await createBook(formData)
     .then((resp:any) => {

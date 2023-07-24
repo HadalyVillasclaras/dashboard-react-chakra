@@ -1,10 +1,12 @@
+import { Category } from "./Category"
+
 export interface Book {
   id?: number,
   title: string,
   subtitle?: string,
   author: string, 
   year: number,
-  category?: string
+  category: Category
   language: string, 
   country: string, 
   pages: number, 

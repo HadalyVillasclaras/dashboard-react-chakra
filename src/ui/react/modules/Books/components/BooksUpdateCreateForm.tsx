@@ -1,6 +1,7 @@
 import { Input, Text, Box, Textarea, Select, Button, useDisclosure, WrapItem, Menu, MenuButton, MenuList, MenuOptionGroup, MenuItemOption } from '@chakra-ui/react'
 import { useEffect, useRef, useState } from 'react'
-import { Book } from '../../../../../core/books/models/book.model';
+import { useNavigate } from 'react-router-dom';
+import { Book } from '../../../../../core/books/Entity/Book';
 import { useCreateBook } from '../hooks/useCreateBook';
 import { useUpdateBook } from '../hooks/useUpdateBook';
 
@@ -14,37 +15,47 @@ export const BooksUpdateCreateForm = ({ currentBook, isEdit, setIsSaveButtonDisa
   const formRef = useRef<HTMLFormElement>(null);
   const [book, setBook] = useState<any>();
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const navigate = useNavigate();
 
   async function submitForm() {
-    console.log('hey');
-    setIsSaveButtonDisabled(true);
+    event?.preventDefault();
+    // setIsSaveButtonDisabled(true);
+
     if (formRef.current) {
-      const formData = serialize(formRef.current, { hash: true, empty: true });
+      const formData = new FormData(formRef.current);
+      const data = Object.fromEntries(formData.entries());
       isEdit
-        ? updateBook(formData)
-        : createBook(formData)
+        ? updateBook(data)
+        : createBook(data)
     }
     setTimeout(() => {
       setIsSaveButtonDisabled(false);
     }, 3000);
   }
 
-  async function updateBook(formData: any) {
-    let newBookInfo: Book = formDataToBookObject(formData);
-    await useUpdateBook(book.id, newBookInfo)
-      .then(updatedBook => {
-        setBook(updatedBook);
+  async function updateBook(data: any) {
+    let updatedBookInfo: Book = formDataToBookObject(data);
+    await useUpdateBook(book.id, updatedBookInfo)
+      .then(({ book, pagination }) => {
+        setBook(book);
         // setToastSuccessMessage("Book updated successfully");
+
+        navigateToBookDetail(book.id);
+
+
       }).catch((error) => {
         // setToastErrorMessage(error.response.data.error.message);
       });
   }
 
-  async function createBook(formData: any) {
-    let newBookInfo: Book = formDataToBookObject(formData);
+  async function createBook(data: any) {
+    let newBookInfo: Book = formDataToBookObject(data);
+    console.log(newBookInfo);
     await useCreateBook(newBookInfo)
-      .then(newBook => {
-        setBook(newBook);
+      .then(({ book, pagination }) => {
+        setBook(book);
+        console.log(book);
+        navigateToBookDetail(book.id);
         // setToastSuccessMessage("Book created successfully");
       }).catch(error => {
         // setToastErrorMessage(error.response.data.error.message);
@@ -56,12 +67,12 @@ export const BooksUpdateCreateForm = ({ currentBook, isEdit, setIsSaveButtonDisa
       title: formData.title,
       subtitle: formData.subtitle,
       author: formData.author,
-      year: formData.year,
+      year: Number(formData.year),
       category: formData.category,
       language: formData.language,
       country: formData.country,
-      pages: formData.pages,
-      price: formData.price,
+      pages: Number(formData.pages),
+      price: Number(formData.price),
       link: formData.link,
       status: formData.status,
       isbn: formData.isbn,
@@ -72,13 +83,17 @@ export const BooksUpdateCreateForm = ({ currentBook, isEdit, setIsSaveButtonDisa
     return newBook
   }
 
-  console.log(book);
+  function navigateToBookDetail(bookId: number) {
+    setTimeout(() => {
+      navigate(`/books/detail/${bookId}`);
+    }, 3000);
+  }
+
   useEffect(() => {
     isEdit
       ? setBook(currentBook)
       : setBook({})
   }, []);
-
   return (
     <>
       {

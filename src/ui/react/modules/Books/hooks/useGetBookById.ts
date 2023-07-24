@@ -9,7 +9,6 @@ export const useGetBookById = async (bookId: string | undefined) => {
     .then((resp:any) => {
       book = resp.data;
       pagination = resp.pagination;
-      console.log(resp);
     })
     .catch((err) => {
       console.log(err);

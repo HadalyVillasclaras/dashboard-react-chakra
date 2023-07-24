@@ -1,7 +1,8 @@
 import { getPaginationData } from "../../core/getPaginationData";
 import { http } from "../../http";
+import { Book } from "../Entity/book.model";
 
-export const createBook = async(body: any) => {
+export const createBook = async(body: Book) => {
   try {
     // transform body to back format
     const url = import.meta.env.VITE_API_BASEURL + 'books';
