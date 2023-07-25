@@ -4,6 +4,10 @@ import { useNavigate } from 'react-router-dom';
 import { Book } from '../../../../../core/books/Entity/Book';
 import { useCreateBook } from '../hooks/useCreateBook';
 import { useUpdateBook } from '../hooks/useUpdateBook';
+import  languages  from '../../../../../core/common/dictionaries/Languages.json';
+import  countries  from '../../../../../core/common/dictionaries/Countries.json';
+import { Categories } from '../../../../../core/books/Entity/Category';
+
 
 interface Props {
   currentBook?: any;
@@ -122,15 +126,45 @@ export const BooksUpdateCreateForm = ({ currentBook, isEdit, setIsSaveButtonDisa
           </Box>
           <Box as='section'>
             <Text as="h5">Category</Text>
-            <Input type="text" name="category" defaultValue={book?.category} />
+            <Select name="category" defaultValue={book?.category}>
+              {
+                Categories.map((category, key) => {
+                  return (
+                    <option key={key} value={category}>
+                      {category}
+                    </option>
+                  )
+                })
+              }
+            </Select>
           </Box>
           <Box as='section'>
             <Text as="h5">Language</Text>
-            <Input type="text" name="language" defaultValue={isEdit ? book?.language : ""} />
+            <Select name="language" defaultValue={isEdit ? book?.language : ""}>
+              {
+                languages.map((language, key) => {
+                  return (
+                    <option key={key} value={language.code}>
+                      {language.name}
+                    </option>
+                  )
+                })
+              }
+            </Select>
           </Box>
           <Box as='section'>
             <Text as="h5">Country</Text>
-            <Input type="text" name="country" defaultValue={isEdit ? book?.country : ""} />
+            <Select name="country" defaultValue={isEdit ? book?.country : ""}>
+              {
+                countries.map((country, key) => {
+                  return (
+                    <option key={key} value={country.code}>
+                      {country.name}
+                    </option>
+                  )
+                })
+              }
+            </Select>
           </Box>
           <Box as='section'>
             <Text as="h5">Pages</Text>

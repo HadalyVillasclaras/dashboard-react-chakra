@@ -14,6 +14,8 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import { Book } from "../../../../../core/books/Entity/Book";
 import { deleteBook } from "../../../../../core/books/services/deleteBook";
+import { getCountryNameByCode } from "../../../../../core/utils/getCountryNameByCode";
+import { getLanguageNameByCode } from "../../../../../core/utils/getLanguageNameByCode";
 
 interface Props {
   books: Array<Book>
@@ -22,8 +24,10 @@ interface Props {
 export const BooksTable = ({ books }: Props) => {
   const navigate = useNavigate();
 
-  async function deleteCurrentBook(bookId: number) {
+  async function deleteCurrentBook(event: MouseEvent, bookId: number) {
+    event.stopPropagation()
     if (bookId !== undefined) {
+      console.log('delete?');
       const deleteResponse =  await deleteBook(bookId);
     }
   }
@@ -32,7 +36,7 @@ export const BooksTable = ({ books }: Props) => {
       navigate(`/books/detail/${bookId}`);
     }
   }
-
+//categorie multiselect pls
   return (
     <>
       <TableContainer >
@@ -42,6 +46,7 @@ export const BooksTable = ({ books }: Props) => {
               <Th>Title</Th>
               <Th>Author</Th>
               <Th>Year</Th>
+              <Th>Category</Th> 
               <Th>Language</Th>
               <Th>Pages</Th>
               <Th>Status</Th>
@@ -55,8 +60,9 @@ export const BooksTable = ({ books }: Props) => {
                   <Td>{book.title}</Td>
                   <Td>{book.author}</Td>
                   <Td>{book.year}</Td>
-                  <Td>{book.language}</Td>
-                  <Td>{book.pages}</Td>
+                  <Td>{book.category}</Td>
+                  <Td>{getLanguageNameByCode(book?.language)}</Td>
+                  <Td>{getCountryNameByCode(book?.country)}</Td>
                   <Td>x</Td>
                   <Td>
                     <ButtonGroup>
@@ -65,7 +71,7 @@ export const BooksTable = ({ books }: Props) => {
                           <EditIcon />
                         </Button>
                       </Link>
-                      <Button size="xs" variant="icon-button" onClick={() => deleteCurrentBook(book.id)}>
+                      <Button size="xs" variant="icon-button" onClick={(event) => deleteCurrentBook(event, book.id) }>
                         <DeleteIcon />
                       </Button>
                       <Link to={`detail/${book.id}`}>

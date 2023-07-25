@@ -1,8 +1,11 @@
 import { Text, Box, Flex } from '@chakra-ui/react'
+import { Book } from '../../../../../core/books/Entity/Book';
+import { getCountryNameByCode } from '../../../../../core/utils/getCountryNameByCode';
+import { getLanguageNameByCode } from '../../../../../core/utils/getLanguageNameByCode';
 import { DetailsSubsection } from '../../../common/components/sections/DetailsSubsection';
 
 type Props = {
-  book: any;
+  book: Book;
   // book: BookInterface
 }
 
@@ -18,8 +21,8 @@ export const BookDetails = ({ book }: Props) => {
         <DetailsSubsection title="Author" value={book?.author} />
         <DetailsSubsection title="Year" value={book?.year} />
         <DetailsSubsection title="Category" value={book?.category} />
-        <DetailsSubsection title="Language" value={book?.language} />
-        <DetailsSubsection title="Country" value={book?.country} />
+        <DetailsSubsection title="Language" value={getLanguageNameByCode(book?.language)} />
+        <DetailsSubsection title="Country" value={getCountryNameByCode(book?.country)}/>
         <DetailsSubsection title="Pages" value={book?.pages} />
         <DetailsSubsection title="Price" value={book?.price} />
         <DetailsSubsection title="Link" value={book?.link} />
