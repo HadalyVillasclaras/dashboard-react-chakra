@@ -29,7 +29,6 @@ export const BookDetails = ({ book }: Props) => {
         <DetailsSubsection title="Status" value={book?.status} />
         <DetailsSubsection title="Isbn" value={book?.isbn} />
         <DetailsSubsection title="Description" value={book?.description} />
-        <DetailsSubsection title="Url" value={book?.url} />
       </Flex>
     </>
   )

@@ -14,7 +14,6 @@
       "status": "",
       "isbn": "",
       "description": "",
-      "url": "",
       "id": 2
     },
     {
@@ -31,7 +30,6 @@
       "status": "",
       "isbn": "",
       "description": "",
-      "url": "",
       "id": 3
     },
     {
@@ -48,7 +46,6 @@
       "status": "",
       "isbn": "",
       "description": "",
-      "url": "",
       "id": 4
     },
     {
@@ -65,7 +62,6 @@
       "status": "",
       "isbn": "",
       "description": "",
-      "url": "",
       "id": 9
     },
     {
@@ -192,7 +188,6 @@
       "status": "",
       "isbn": "",
       "description": "",
-      "url": "",
       "id": 20
     },
     {
@@ -220,7 +215,6 @@
       "status": "",
       "isbn": "",
       "description": "",
-      "url": "",
       "id": 22
     },
     {
@@ -237,7 +231,6 @@
       "status": "",
       "isbn": "",
       "description": "",
-      "url": "",
       "id": 6
     },
     {
@@ -254,7 +247,6 @@
       "status": "",
       "isbn": "",
       "description": "",
-      "url": "",
       "id": 7
     },
     {
@@ -271,8 +263,23 @@
       "status": "",
       "isbn": "",
       "description": "",
-      "url": "",
       "id": 23
+    },
+    {
+      "title": "new book",
+      "subtitle": "",
+      "author": "someone",
+      "year": 1989,
+      "category": "Sculpture",
+      "language": "RU",
+      "country": "IT",
+      "pages": 321,
+      "price": 35,
+      "link": "",
+      "status": "",
+      "isbn": "",
+      "description": "",
+      "id": 24
     }
   ],
   "meta": [

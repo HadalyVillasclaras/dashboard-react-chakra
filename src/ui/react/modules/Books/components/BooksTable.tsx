@@ -24,7 +24,7 @@ interface Props {
 export const BooksTable = ({ books }: Props) => {
   const navigate = useNavigate();
 
-  async function deleteCurrentBook(event: MouseEvent, bookId: number) {
+  async function deleteCurrentBook(event: Event, bookId: number) {
     event.stopPropagation()
     if (bookId !== undefined) {
       console.log('delete?');

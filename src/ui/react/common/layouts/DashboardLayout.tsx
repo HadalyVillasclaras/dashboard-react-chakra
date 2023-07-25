@@ -4,13 +4,15 @@ import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 import { SideBar } from '../components/sidebar/Sidebar'
 import { Outlet } from 'react-router-dom'
+import { ToastProvider } from '../contexts/toast/ToastProvider'
 
 
 
 export const DashboardLayout = () => {
   return (
     <>
- <Box as="section" height="100vh" display="flex">
+      <ToastProvider>
+        <Box as="section" height="100vh" display="flex">
           <SideBar />
           <Box as="main" overflowX="hidden" width="100%">
             <Header />
@@ -18,6 +20,7 @@ export const DashboardLayout = () => {
             <Footer />
           </Box>
         </Box>
+      </ToastProvider>
     </>
   )
 }

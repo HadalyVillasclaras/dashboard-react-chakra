@@ -1,5 +1,5 @@
 import { Input, Text, Box, Textarea, Select, Button, useDisclosure, WrapItem, Menu, MenuButton, MenuList, MenuOptionGroup, MenuItemOption } from '@chakra-ui/react'
-import { useEffect, useRef, useState } from 'react'
+import { useContext, useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { Book } from '../../../../../core/books/Entity/Book';
 import { useCreateBook } from '../hooks/useCreateBook';
@@ -7,6 +7,7 @@ import { useUpdateBook } from '../hooks/useUpdateBook';
 import  languages  from '../../../../../core/common/dictionaries/Languages.json';
 import  countries  from '../../../../../core/common/dictionaries/Countries.json';
 import { Categories } from '../../../../../core/books/Entity/Category';
+import { ToastContext } from '../../../common/contexts/toast/ToastContext';
 
 
 interface Props {
@@ -20,6 +21,21 @@ export const BooksUpdateCreateForm = ({ currentBook, isEdit, setIsSaveButtonDisa
   const [book, setBook] = useState<any>();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const navigate = useNavigate();
+
+  const {setToastOptions} = useContext(ToastContext);
+
+  function setToast() {
+    setToastOptions(
+      {
+        title: 'toast',
+        description: '',
+        status: 'success',
+        isClosable: true,
+        position: 'top',
+        variants: 'solid'
+      }
+    );
+  }
 
   async function submitForm() {
     event?.preventDefault();
@@ -81,7 +97,6 @@ export const BooksUpdateCreateForm = ({ currentBook, isEdit, setIsSaveButtonDisa
       status: formData.status,
       isbn: formData.isbn,
       description: formData.description,
-      url: formData.url
     }
 
     return newBook
@@ -103,7 +118,7 @@ export const BooksUpdateCreateForm = ({ currentBook, isEdit, setIsSaveButtonDisa
       {
         book !== undefined &&
         <form ref={formRef} >
-          <button type="reset">Reset form</button><br />
+          <Button  onClick={() => setToast()}>click</Button>
           <button type="submit" onClick={() => submitForm()}>Submit form</button>
           <Box as="header">
             <Text as="h2">Title book</Text>
@@ -190,11 +205,6 @@ export const BooksUpdateCreateForm = ({ currentBook, isEdit, setIsSaveButtonDisa
             <Text as="h5">Description</Text>
             <Textarea name="description" defaultValue={isEdit ? book?.description : ""} />
           </Box>
-          <Box as='section'>
-            <Text as="h5">Url</Text>
-            <Input type="text" name="url" defaultValue={isEdit ? book?.url : ""} />
-          </Box>
-
         </form>
       }
     </>

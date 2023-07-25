@@ -15,5 +15,4 @@ export interface Book {
   status?: string,
   isbn?: string,
   description?: string,
-  url?: string
 }
