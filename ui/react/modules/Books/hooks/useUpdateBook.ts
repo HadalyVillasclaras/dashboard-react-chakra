@@ -1,5 +1,5 @@
-import { Book } from "../../../../../core/books/domain/Book";
-import { updateBook } from "../../../../../core/books/application-services/updateBook";
+import { Book } from "../../../../../src/books/domain/Book";
+import { updateBook } from "../../../../../src/books/application-services/updateBook";
 
 export const useUpdateBook = async (bookId: string | undefined, data: Book) => {
   let book: any;

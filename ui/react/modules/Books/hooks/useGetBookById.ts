@@ -1,5 +1,5 @@
-import { getBookById } from "../../../../../core/books/application-services/getBookById";
-import { getBooks } from "../../../../../core/books/application-services/getBooks";
+import { getBookById } from "../../../../../src/books/application-services/getBookById";
+import { getBooks } from "../../../../../src/books/application-services/getBooks";
 
 export const useGetBookById = async (bookId: string | undefined) => {
   let book: any;

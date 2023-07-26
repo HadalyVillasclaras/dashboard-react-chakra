@@ -1,7 +1,7 @@
-import { Text, Box, Flex } from '@chakra-ui/react'
-import { Book } from '../../../../../core/books/domain/Book';
-import { getCountryNameByCode } from '../../../../../core/shared/utils/getCountryNameByCode';
-import { getLanguageNameByCode } from '../../../../../core/shared/utils/getLanguageNameByCode';
+import { Box, Flex, Text } from '@chakra-ui/react';
+import { Book } from '../../../../../src/books/domain/Book';
+import { getCountryNameByCode } from '../../../../../src/shared/utils/getCountryNameByCode';
+import { getLanguageNameByCode } from '../../../../../src/shared/utils/getLanguageNameByCode';
 import { DetailsSubsection } from '../../../shared/components/sections/DetailsSubsection';
 
 type Props = {

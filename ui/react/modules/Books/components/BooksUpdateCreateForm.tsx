@@ -1,12 +1,12 @@
 import { Input, Text, Box, Textarea, Select, Button, useDisclosure, WrapItem, Menu, MenuButton, MenuList, MenuOptionGroup, MenuItemOption } from '@chakra-ui/react'
 import { useContext, useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { Book } from '../../../../../core/books/domain/Book';
+import { Book } from '../../../../../src/books/domain/Book';
 import { useCreateBook } from '../hooks/useCreateBook';
 import { useUpdateBook } from '../hooks/useUpdateBook';
-import  languages  from '../../../../../core/shared/dictionaries/Languages.json';
-import  countries  from '../../../../../core/shared/dictionaries/Countries.json';
-import { Categories } from '../../../../../core/books/domain/Category';
+import  languages  from '../../../../../src/shared/dictionaries/Languages.json';
+import  countries  from '../../../../../src/shared/dictionaries/Countries.json';
+import { Categories } from '../../../../../src/books/domain/Category';
 import { ToastContext } from '../../../shared/contexts/toast/ToastContext';
 
 

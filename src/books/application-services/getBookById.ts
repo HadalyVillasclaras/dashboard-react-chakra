@@ -1,5 +1,4 @@
 import { getPaginationData } from "../../shared/utils/getPaginationData";
-import { AxiosHttp } from "../../shared/lib/AxiosHttp";
 import { Book } from "../domain/Book";
 import { BookMockRepository } from "../infrastructure/BookMockRepository";
 
