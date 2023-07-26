@@ -4,10 +4,10 @@ import { useNavigate } from 'react-router-dom';
 import { Book } from '../../../../../core/books/Entity/Book';
 import { useCreateBook } from '../hooks/useCreateBook';
 import { useUpdateBook } from '../hooks/useUpdateBook';
-import  languages  from '../../../../../core/common/dictionaries/Languages.json';
-import  countries  from '../../../../../core/common/dictionaries/Countries.json';
+import  languages  from '../../../../../core/shared/dictionaries/Languages.json';
+import  countries  from '../../../../../core/shared/dictionaries/Countries.json';
 import { Categories } from '../../../../../core/books/Entity/Category';
-import { ToastContext } from '../../../common/contexts/toast/ToastContext';
+import { ToastContext } from '../../../shared/contexts/toast/ToastContext';
 
 
 interface Props {

@@ -2,7 +2,7 @@ import { Text, Box, Flex } from '@chakra-ui/react'
 import { Book } from '../../../../../core/books/Entity/Book';
 import { getCountryNameByCode } from '../../../../../core/utils/getCountryNameByCode';
 import { getLanguageNameByCode } from '../../../../../core/utils/getLanguageNameByCode';
-import { DetailsSubsection } from '../../../common/components/sections/DetailsSubsection';
+import { DetailsSubsection } from '../../../shared/components/sections/DetailsSubsection';
 
 type Props = {
   book: Book;

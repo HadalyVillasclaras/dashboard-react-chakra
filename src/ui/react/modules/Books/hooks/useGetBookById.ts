@@ -1,6 +1,6 @@
 import { getBookById } from "../../../../../core/books/services/getBookById";
 import { getBooks } from "../../../../../core/books/services/getBooks";
-import { getPaginationData } from "../../../../../core/core/getPaginationData";
+import { getPaginationData } from "../../../../../core/shared/getPaginationData";
 
 export const useGetBookById = async (bookId: string | undefined) => {
   let book: any;

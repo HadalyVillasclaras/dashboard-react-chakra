@@ -1,6 +1,6 @@
 import { Book } from "../../../../../core/books/Entity/Book";
 import { updateBook } from "../../../../../core/books/services/updateBook";
-import { getPaginationData } from "../../../../../core/core/getPaginationData";
+import { getPaginationData } from "../../../../../core/shared/getPaginationData";
 
 export const useUpdateBook = async (bookId: string | undefined, data: Book) => {
   let book: any;

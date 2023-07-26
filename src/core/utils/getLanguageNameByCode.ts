@@ -1,4 +1,4 @@
-import languages from '../common/dictionaries/Languages.json';
+import languages from '../shared/dictionaries/Languages.json';
 
 export function getLanguageNameByCode(code: string): string | undefined {
   let language = languages.filter(l => {

@@ -2,7 +2,7 @@ import { Book } from "../../../../../core/books/Entity/Book";
 import { createBook } from "../../../../../core/books/services/createBook";
 import { getBookById } from "../../../../../core/books/services/getBookById";
 import { getBooks } from "../../../../../core/books/services/getBooks";
-import { getPaginationData } from "../../../../../core/core/getPaginationData";
+import { getPaginationData } from "../../../../../core/shared/getPaginationData";
 
 export const useCreateBook = async (formData: Book) => {
   let book: Book;
