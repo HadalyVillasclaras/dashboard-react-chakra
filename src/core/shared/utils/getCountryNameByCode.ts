@@ -1,4 +1,4 @@
-import countries from '../shared/dictionaries/Countries.json'
+import countries from '../dictionaries/Countries.json'
 
 export function getCountryNameByCode(code: string): string | undefined {
   let country = countries.filter(c => {

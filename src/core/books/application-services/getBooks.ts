@@ -1,17 +1,20 @@
-import { getPaginationData } from "../../shared/getPaginationData";
-import { http } from "../../http";
+import { getPaginationData } from "../../shared/utils/getPaginationData";
+import { Book } from "../domain/Book";
+import { BookMockRepository } from "../infrastructure/BookMockRepository";
 
 export const getBooks = async() => {
   try {
-    const url = import.meta.env.VITE_API_BASEURL + 'books';
     // const jwt =  localStorage.getItem('jwt');
-    const httpRequest = await (new http(url, 'GET').request());
-    const books = httpRequest.data;
+    const bookRepo = await (new BookMockRepository());
+    const response = await bookRepo.getAll();
+
+    const books = response.data;
     const pagination = getPaginationData(books);
+    
     let apiInterface = {
       data: books,
       pagination: pagination,
-      status: httpRequest.status
+      status: response.status
     }
     
     return apiInterface;

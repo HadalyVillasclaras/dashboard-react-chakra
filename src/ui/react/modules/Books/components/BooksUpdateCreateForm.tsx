@@ -1,12 +1,12 @@
 import { Input, Text, Box, Textarea, Select, Button, useDisclosure, WrapItem, Menu, MenuButton, MenuList, MenuOptionGroup, MenuItemOption } from '@chakra-ui/react'
 import { useContext, useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { Book } from '../../../../../core/books/domain/types/Book';
+import { Book } from '../../../../../core/books/domain/Book';
 import { useCreateBook } from '../hooks/useCreateBook';
 import { useUpdateBook } from '../hooks/useUpdateBook';
 import  languages  from '../../../../../core/shared/dictionaries/Languages.json';
 import  countries  from '../../../../../core/shared/dictionaries/Countries.json';
-import { Categories } from '../../../../../core/books/domain/types/Category';
+import { Categories } from '../../../../../core/books/domain/Category';
 import { ToastContext } from '../../../shared/contexts/toast/ToastContext';
 
 
@@ -70,11 +70,9 @@ export const BooksUpdateCreateForm = ({ currentBook, isEdit, setIsSaveButtonDisa
 
   async function createBook(data: any) {
     let newBookInfo: Book = formDataToBookObject(data);
-    console.log(newBookInfo);
     await useCreateBook(newBookInfo)
       .then(({ book, pagination }) => {
         setBook(book);
-        console.log(book);
         navigateToBookDetail(book.id);
         // setToastSuccessMessage("Book created successfully");
       }).catch(error => {

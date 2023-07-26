@@ -3,7 +3,7 @@ import axios from "axios";
 
 export type httpMethods = "GET" | 'POST' | 'PUT' | 'DELETE';
 
-export class http {
+export class AxiosHttp {
 	headers: any;
 	methodName: httpMethods = 'POST';
 	url: string;

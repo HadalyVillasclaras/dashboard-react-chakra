@@ -12,10 +12,10 @@ import {
   Tr,
 } from "@chakra-ui/react";
 import { Link, useNavigate } from "react-router-dom";
-import { Book } from "../../../../../core/books/domain/types/Book";
+import { Book } from "../../../../../core/books/domain/Book";
 import { deleteBook } from "../../../../../core/books/application-services/deleteBook";
-import { getCountryNameByCode } from "../../../../../core/utils/getCountryNameByCode";
-import { getLanguageNameByCode } from "../../../../../core/utils/getLanguageNameByCode";
+import { getCountryNameByCode } from "../../../../../core/shared/utils/getCountryNameByCode";
+import { getLanguageNameByCode } from "../../../../../core/shared/utils/getLanguageNameByCode";
 
 interface Props {
   books: Array<Book>
@@ -27,7 +27,6 @@ export const BooksTable = ({ books }: Props) => {
   async function deleteCurrentBook(event: Event, bookId: number) {
     event.stopPropagation()
     if (bookId !== undefined) {
-      console.log('delete?');
       const deleteResponse =  await deleteBook(bookId);
     }
   }

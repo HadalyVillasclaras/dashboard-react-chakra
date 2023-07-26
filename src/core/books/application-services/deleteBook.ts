@@ -1,22 +1,15 @@
-import { getPaginationData } from "../../shared/getPaginationData";
-import { http } from "../../http";
+import { getPaginationData } from "../../shared/utils/getPaginationData";
 
 export const deleteBook = async(id: any) => {
   try {
-    const url = `${import.meta.env.VITE_API_BASEURL}books/${id}`;
 
-    const httpRequest = await (new http(url, 'DELETE').request());
-    return httpRequest;
-    const book = httpRequest.data;
-    const pagination = getPaginationData(book);
-    console.log(httpRequest);
-    let apiInterface = {
-      data: book,
-      pagination: pagination,
-      status: httpRequest.status
-    }
+    // let apiInterface = {
+    //   data: book,
+    //   pagination: pagination,
+    //   status: httpRequest.status
+    // }
     
-    return apiInterface;
+    // return apiInterface;
   } catch (error: any) {
     console.error(error.response);
     let apiError ={

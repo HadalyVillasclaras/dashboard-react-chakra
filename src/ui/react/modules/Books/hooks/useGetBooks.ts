@@ -1,5 +1,4 @@
 import { getBooks } from "../../../../../core/books/application-services/getBooks";
-import { getPaginationData } from "../../../../../core/shared/getPaginationData";
 
 export const useGetBooks = async () => {
   let books: any;
