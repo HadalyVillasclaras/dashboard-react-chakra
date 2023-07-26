@@ -1,4 +1,4 @@
-import { Category } from "./Category"
+import { BookCategory } from "./Category"
 
 export type Book = {
   id?: number,
@@ -6,7 +6,7 @@ export type Book = {
   subtitle?: string,
   author: string, 
   year: number,
-  category: Category
+  category: BookCategory
   language: string, 
   country: string, 
   pages: number, 
