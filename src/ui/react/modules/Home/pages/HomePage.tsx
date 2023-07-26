@@ -1,5 +1,5 @@
 import React from 'react'
-import { Subheader } from '../../../shared/components/modules/subheader/Subheader'
+import { Subheader } from '../../../shared/components/header/Subheader'
 
 export const HomePage = ({ title }: any) => {
   return (

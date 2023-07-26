@@ -1,6 +1,6 @@
 import { getPaginationData } from "../../shared/getPaginationData";
 import { http } from "../../http";
-import { Book } from "../Entity/Book";
+import { Book } from "../domain/types/Book";
 
 export const createBook = async(body: Book) => {
   try {

@@ -1,7 +1,7 @@
 import { AddIcon } from "@chakra-ui/icons";
 import { Button, Divider, Flex, Spinner } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { Section } from "../../../../shared/components/Section";
+import { Section } from "../../../../shared/components/sections/Section";
 import { BooksTable } from "../BooksTable";
 import { useEffect, useState } from "react";
 import { useGetBooks } from "../../hooks/useGetBooks";

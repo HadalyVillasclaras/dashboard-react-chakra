@@ -12,8 +12,8 @@ import {
   Tr,
 } from "@chakra-ui/react";
 import { Link, useNavigate } from "react-router-dom";
-import { Book } from "../../../../../core/books/Entity/Book";
-import { deleteBook } from "../../../../../core/books/services/deleteBook";
+import { Book } from "../../../../../core/books/domain/types/Book";
+import { deleteBook } from "../../../../../core/books/application-services/deleteBook";
 import { getCountryNameByCode } from "../../../../../core/utils/getCountryNameByCode";
 import { getLanguageNameByCode } from "../../../../../core/utils/getLanguageNameByCode";
 

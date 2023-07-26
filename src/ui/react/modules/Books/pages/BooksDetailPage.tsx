@@ -1,4 +1,4 @@
-import { Subheader } from '../../../shared/components/modules/subheader/Subheader'
+import { Subheader } from '../../../shared/components/header/Subheader'
 import { BooksDetailsContainer } from '../components/containers/BooksDetailsContainer'
 
 export const BooksDetailPage = () => {

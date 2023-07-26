@@ -1,6 +1,6 @@
 import { Divider } from '@chakra-ui/react'
 import { useRouteError } from 'react-router-dom';
-import { Subheader } from '../components/modules/subheader/Subheader'
+import { Subheader } from '../components/header/Subheader';
 
 export const NotFoundPage = () => {
   const error: any = useRouteError();

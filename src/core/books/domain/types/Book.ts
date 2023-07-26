@@ -1,6 +1,6 @@
 import { Category } from "./Category"
 
-export interface Book {
+export type Book = {
   id?: number,
   title: string,
   subtitle?: string,

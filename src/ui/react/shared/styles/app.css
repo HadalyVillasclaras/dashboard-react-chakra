@@ -7,7 +7,7 @@ ul {
     margin-inline-start: 0px !important;
 }
 
-main {
+.app-wrapper {
     padding: 2rem;
 }
 

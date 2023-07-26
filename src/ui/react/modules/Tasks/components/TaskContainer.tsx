@@ -8,7 +8,7 @@ import {
   Thead,
   Tr,
 } from "@chakra-ui/react";
-import { Section } from "../../../shared/components/Section";
+import { Section } from "../../../shared/components/sections/Section";
 
 export const TaskContainer = () => {
   return (

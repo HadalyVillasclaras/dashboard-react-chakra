@@ -11,16 +11,16 @@ import { ToastProvider } from '../contexts/toast/ToastProvider'
 export const DashboardLayout = () => {
   return (
     <>
-      <ToastProvider>
-        <Box as="section" height="100vh" display="flex">
+        <Box as="div" height="100vh" display="flex">
           <SideBar />
-          <Box as="main" overflowX="hidden" width="100%">
+          <Box as="div" className='app-wrapper' overflowX="hidden" width="100%">
             <Header />
-            <Outlet />
+            <Box as='main'>
+              <Outlet />
+            </Box>
             <Footer />
           </Box>
         </Box>
-      </ToastProvider>
     </>
   )
 }

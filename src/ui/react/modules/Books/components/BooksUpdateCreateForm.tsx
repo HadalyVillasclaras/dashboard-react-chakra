@@ -1,18 +1,18 @@
 import { Input, Text, Box, Textarea, Select, Button, useDisclosure, WrapItem, Menu, MenuButton, MenuList, MenuOptionGroup, MenuItemOption } from '@chakra-ui/react'
 import { useContext, useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { Book } from '../../../../../core/books/Entity/Book';
+import { Book } from '../../../../../core/books/domain/types/Book';
 import { useCreateBook } from '../hooks/useCreateBook';
 import { useUpdateBook } from '../hooks/useUpdateBook';
 import  languages  from '../../../../../core/shared/dictionaries/Languages.json';
 import  countries  from '../../../../../core/shared/dictionaries/Countries.json';
-import { Categories } from '../../../../../core/books/Entity/Category';
+import { Categories } from '../../../../../core/books/domain/types/Category';
 import { ToastContext } from '../../../shared/contexts/toast/ToastContext';
 
 
 interface Props {
   currentBook?: any;
-  setIsSaveButtonDisabled: (disabled: boolean) => void;
+  setIsSaveButtonDisabled?: (disabled: boolean) => void;
   isEdit: boolean;
 }
 
