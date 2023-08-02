@@ -1,5 +1,6 @@
 import { getPaginationData } from "../../shared/utils/getPaginationData";
 import { Book } from "../domain/Book";
+import { BookRepoInterface } from "../domain/BookRepoInterface";
 import { BookMockRepository } from "../infrastructure/BookMockRepository";
 
 export const createBook = async(body: Book) => {
@@ -26,4 +27,15 @@ export const createBook = async(body: Book) => {
     }
     return apiError;
   }
+}
+
+
+function createBook(bookRepo: BookRepoInterface, book: Book) {
+  //esto seria como la inversion de dependenias que hacemos en el constructuor
+
+  // validaciones de negocio antes de impementar repo
+  ensureBookIsValid(book) // isBookValid() etc. esto es un regla de nuestro dominio
+
+  bookRepo.create(bookRepo)
+
 }
