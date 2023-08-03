@@ -1,4 +1,4 @@
-import { getBooks } from "../../../../../src/books/application-services/getBooks";
+import { getBooks } from "../../../../../core/modules/books/application-services/getBooks";
 
 export const useGetBooks = async () => {
   let books: any;

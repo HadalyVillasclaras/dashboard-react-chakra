@@ -1,18 +1,18 @@
-import { getPaginationData } from "../../shared/utils/getPaginationData";
+import { getPaginationData } from "../../../shared/utils/getPaginationData";
 import { Book } from "../domain/Book";
 import { BookMockRepository } from "../infrastructure/BookMockRepository";
 
-export const getBookById = async(id: any) => {
+export const getBooks = async() => {
   try {
     // const jwt =  localStorage.getItem('jwt');
     const bookRepo = await (new BookMockRepository());
-    const response = await bookRepo.getById(id);
+    const response = await bookRepo.getAll();
 
-    const book = response.data;
-    const pagination = getPaginationData(book);
-
+    const books = response.data;
+    const pagination = getPaginationData(books);
+    
     let apiInterface = {
-      data: book,
+      data: books,
       pagination: pagination,
       status: response.status
     }
@@ -27,4 +27,3 @@ export const getBookById = async(id: any) => {
     return apiError;
   }
 }
-

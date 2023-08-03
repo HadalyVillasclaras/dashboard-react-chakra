@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "server": "npx json-server -p 3500 -w data/db.json"
+    "server": "npx json-server -p 3500 -w src/core/data/db.json"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.17",

@@ -12,10 +12,10 @@ import {
   Tr,
 } from "@chakra-ui/react";
 import { Link, useNavigate } from "react-router-dom";
-import { Book } from "../../../../../src/books/domain/Book";
-import { deleteBook } from "../../../../../src/books/application-services/deleteBook";
-import { getCountryNameByCode } from "../../../../../src/shared/utils/getCountryNameByCode";
-import { getLanguageNameByCode } from "../../../../../src/shared/utils/getLanguageNameByCode";
+import { Book } from "../../../../../core/modules//books/domain/Book";
+import { deleteBook } from "../../../../../core/modules//books/application-services/deleteBook";
+import { getCountryNameByCode } from "../../../../../core/shared/utils/getCountryNameByCode";
+import { getLanguageNameByCode } from "../../../../../core/shared/utils/getLanguageNameByCode";
 
 interface Props {
   books: Array<Book>

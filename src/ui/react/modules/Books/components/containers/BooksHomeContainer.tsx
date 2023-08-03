@@ -5,7 +5,7 @@ import { Section } from "../../../../shared/components/sections/Section";
 import { BooksTable } from "../BooksTable";
 import { useEffect, useState } from "react";
 import { useGetBooks } from "../../hooks/useGetBooks";
-import { getPaginationData } from "../../../../../../src/shared/utils/getPaginationData";
+import { getPaginationData } from "../../../../../../core/shared/utils/getPaginationData";
 
 export const BooksHomeContainer = () => {
   const [books, setBooks] = useState<any>([]);

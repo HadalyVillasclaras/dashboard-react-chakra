@@ -1,5 +1,4 @@
-import { getPaginationData } from "../../shared/utils/getPaginationData";
-import { Book } from "../domain/Book";
+import { getPaginationData } from "../../../shared/utils/getPaginationData";
 import { BookMockRepository } from "../infrastructure/BookMockRepository";
 
 export const updateBook = async(id: any, body: any) => {

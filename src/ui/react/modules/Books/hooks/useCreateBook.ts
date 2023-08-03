@@ -1,6 +1,6 @@
-import { Book } from "../../../../../src/books/domain/Book";
-import { createBook } from "../../../../../src/books/application-services/createBook";
-import { getPaginationData } from "../../../../../src/shared/utils/getPaginationData";
+import { Book } from "../../../../../core/modules/books/domain/Book";
+import { createBook } from "../../../../../core/modules/books/application-services/createBook";
+import { getPaginationData } from "../../../../../core/shared/utils/getPaginationData";
 
 export const useCreateBook = async (formData: Book) => {
   let book: Book;

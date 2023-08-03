@@ -1,4 +1,4 @@
-import { getPaginationData } from "../../shared/utils/getPaginationData";
+import { getPaginationData } from "../../../shared/utils/getPaginationData";
 
 export const deleteBook = async(id: any) => {
   try {
